@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/*body {
+  margin: 0;
+  padding: 0;
+  background: url(http://xgclass.com/xgclass/wp-content/uploads/2016/07/headerbg.jpg) #fff;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*/
+
+button {
+  position: relative;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.5rem;
+  font-family: Oswald, sans-serif;
+  color: #fff;
+  background-color: #2980b9;
+  padding: .4em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+
