@@ -1,14 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'tab-content',
-  templateUrl: './tab-content.component.html',
+  template: `
+    <div class="tab-content">
+      <div class="content">
+        <router-outlet></router-outlet>
+       </div>
+     </div>`,
   styleUrls: ['./tab-content.component.scss']
 })
 export class TabContentComponent implements OnInit {
+  @Input() nowLab: string = '生平';
   isLoading: boolean = true; // 只有在上面声明了 页面才能访问到
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     setTimeout(() => {

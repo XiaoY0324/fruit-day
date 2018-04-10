@@ -1,0 +1,30 @@
+<div>
+  <nz-card nzLoading="{{ isLoading}}">
+    <ng-template #title>
+      出生地
+    </ng-template>
+    <ng-template #body>
+      新蔡县，古称蔡州，河南省省直管县，位于河南省东南部，总面积1453平方公里，耕地148万亩，辖20个乡镇、3个街道，361个村（居）委会，总人口113万（2015年）。
+      夏朝初年，炎帝裔孙、华夏凿井术的发明人伯夷辅佐大禹治水有功被封为吕侯，在此地建立吕国。春秋时期（公元前529年），蔡平侯将国都迁到古吕地，史称新蔡国，新蔡由此得名。
+    </ng-template>
+  </nz-card>
+  <nz-card nzLoading="{{ isLoading}}">
+    <ng-template #title>
+      教育经历
+    </ng-template>
+    <ng-template #body>
+      <nz-timeline>
+        <nz-timeline-item [nzColor]="'green'">明英小学 2015-09-01</nz-timeline-item>
+        <nz-timeline-item [nzColor]="'green'">今是中学 2015-09-01</nz-timeline-item>
+        <nz-timeline-item [nzColor]="'green'">新蔡一高(清华班) 2015-09-01</nz-timeline-item>
+        <nz-timeline-item [nzColor]="'green'">南阳理工(软件工程) 2015-09-01</nz-timeline-item>
+        <nz-timeline-item [nzColor]="'red'">
+          <ng-template #custom>
+            <i class="anticon anticon-clock-circle-o" style="font-size: 16px;"></i>
+          </ng-template>
+          工作 2014-09-01 - ？
+        </nz-timeline-item>
+      </nz-timeline>
+    </ng-template>
+  </nz-card>
+</div>

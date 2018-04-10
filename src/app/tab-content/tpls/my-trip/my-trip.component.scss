@@ -1,0 +1,20 @@
+.trip {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    display: block;
+  }
+
+ .custom-card {
+    padding: 10px 16px;
+  }
+
+  .custom-card p {
+    color: #999;
+  }
+
+  .ant-card-body {
+    padding: 0;
+  }
+}

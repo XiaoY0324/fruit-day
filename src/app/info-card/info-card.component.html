@@ -1,6 +1,6 @@
 <!-- 声明的组件的selector 名字 -->
 <header-tab-component (onSelectTab)="onReceiveLabel($event)"></header-tab-component>
-<tab-content></tab-content>
+<tab-content [nowLab]="nowLab"></tab-content>
 
 <video autoplay loop id="video-background" poster="http://www.webhek.com/demos/video-background/polina.jpg" *ngIf="nowLab === '生平'">
   <source src="http://www.webhek.com/demos/video-background/polina.webm" type="video/mp4" />
@@ -10,21 +10,21 @@
 </video>
 
 <video autoplay loop id="video-background" *ngIf="nowLab === '旅途'">
-  <source src="http://demo.cssmoban.com/cssthemes4/tpmo_494_motion/video/red-flower.mp4" type="video/mp4" />
+  <source src="../../assets/videos/red-flower.mp4" type="video/mp4" />
     Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
 
 <video autoplay loop id="video-background" *ngIf="nowLab === '心得'">
-  <source src="http://demo.cssmoban.com/cssthemes4/tpmo_494_motion/video/moving-cloud.mp4" type="video/mp4" />
+  <source src="../../assets/videos/moving-cloud.mp4" type="video/mp4" />
     Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
 
 <video autoplay loop id="video-background" *ngIf="nowLab === '情况'">
-  <source src="http://demo.cssmoban.com/cssthemes4/tpmo_494_motion/video/night-light-blur.mp4" type="video/mp4" />
+  <source src="../../assets/videos/night-light-blur.mp4" type="video/mp4" />
     Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
 
 <video autoplay loop id="video-background" *ngIf="nowLab === '更多'">
-  <source src="http://demo.cssmoban.com/cssthemes4/tpmo_494_motion/video/padaut-bee.mp4" type="video/mp4" />
+  <source src="../../assets/videos/padaut-bee.mp4" type="video/mp4" />
     Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>

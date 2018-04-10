@@ -1,7 +1,7 @@
 <ul nz-menu [nzMode]="'horizontal'">
-  <li nz-menu-item (click)="selectTab('生平')"><i class="anticon anticon-smile"></i> 生平 </li>
-  <li nz-menu-item nzDisabled (click)="selectTab('旅途')"><i class="anticon anticon-rocket"></i> 旅途 </li>
-  <li nz-menu-item nzDisabled (click)="selectTab('心得')"><i class="anticon anticon-heart-o"></i> 心得 </li>
-  <li nz-menu-item nzDisabled (click)="selectTab('情况')"><i class="anticon anticon-solution"></i> 情况 </li>
-  <li nz-menu-item nzDisabled (click)="selectTab('更多')"><i class="anticon anticon-appstore"></i> 更多 </li>
+  <li nz-menu-item (click)="selectTab('生平')" routerLink="/home/living"><i class="anticon anticon-smile"></i> 生平 </li>
+  <li nz-menu-item nzDisabled (click)="selectTab('旅途')" routerLink="/home/trip"><i class="anticon anticon-rocket"></i> 旅途 </li>
+  <li nz-menu-item nzDisabled (click)="selectTab('心得')" routerLink="/home/experience"><i class="anticon anticon-heart-o"></i> 心得 </li>
+  <li nz-menu-item nzDisabled (click)="selectTab('情况')" routerLink="/home/state"><i class="anticon anticon-solution"></i> 情况 </li>
+  <li nz-menu-item nzDisabled (click)="selectTab('更多')" routerLink="/home/more"><i class="anticon anticon-appstore"></i> 更多 </li>
 </ul>

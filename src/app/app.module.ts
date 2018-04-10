@@ -10,6 +10,11 @@ import { InfoCardComponent } from './info-card/info-card.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TabContentComponent } from './tab-content/tab-content.component';
+import { MyLivingComponent } from './tab-content/tpls/my-living/my-living.component';
+import { MyTripComponent } from './tab-content/tpls/my-trip/my-trip.component';
+import { MyExperienceComponent } from './tab-content/tpls/my-experience/my-experience.component';
+import { MyStateComponent } from './tab-content/tpls/my-state/my-state.component';
+import { MoreComponent } from './tab-content/tpls/more/more.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +22,11 @@ import { TabContentComponent } from './tab-content/tab-content.component';
     HeaderTabComponent,
     InfoCardComponent,
     TabContentComponent,
+    MyLivingComponent,
+    MyTripComponent,
+    MyExperienceComponent,
+    MyStateComponent,
+    MoreComponent,
   ],
   imports: [
     AppRoutingModule,
