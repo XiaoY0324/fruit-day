@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-experience.component.scss']
 })
 export class MyExperienceComponent implements OnInit {
-
+  isLoading: boolean = true;
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);
   }
-
 }

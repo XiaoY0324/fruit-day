@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-trip.component.scss']
 })
 export class MyTripComponent implements OnInit {
-
+  showTime: boolean = true;
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.showTime = false;
+    }, 2000);
   }
 
 }
