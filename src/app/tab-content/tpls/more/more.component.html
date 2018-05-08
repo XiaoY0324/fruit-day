@@ -1,46 +1,41 @@
 <div class="more">
-  <div style="margin-left: 60px">
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'topLeft'">
-      <button nz-popconfirm nz-button class="ant-btn">上左</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'top'">
-      <button nz-popconfirm nz-button class="ant-btn">上边</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'topRight'">
-      <button nz-popconfirm nz-button class="ant-btn">上右</button>
-    </nz-popconfirm>
-  </div>
-  <div style="width: 60px; float: left;">
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'leftTop'">
-      <button nz-popconfirm nz-button class="ant-btn">左上</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'left'">
-      <button nz-popconfirm nz-button class="ant-btn">左边</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'leftBottom'">
-      <button nz-popconfirm nz-button class="ant-btn">左下</button>
-    </nz-popconfirm>
-  </div>
-  <div style="width: 60px; margin-left: 252px;">
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'rightTop'">
-      <button nz-popconfirm nz-button class="ant-btn">右上</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'right'">
-      <button nz-popconfirm nz-button class="ant-btn">右边</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'rightBottom'">
-      <button nz-popconfirm nz-button class="ant-btn">右下</button>
-    </nz-popconfirm>
-  </div>
-  <div style="margin-left: 60px; clear: both;">
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'bottomLeft'">
-      <button nz-popconfirm nz-button class="ant-btn">下左</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'bottom'">
-      <button nz-popconfirm nz-button class="ant-btn">下边</button>
-    </nz-popconfirm>
-    <nz-popconfirm [nzTitle]="'确定要删除这个任务吗？'" [nzPlacement]="'bottomRight'">
-      <button nz-popconfirm nz-button class="ant-btn">下右</button>
-    </nz-popconfirm>
-  </div>
+<!--   <div class="left">left</div>
+  <div class="right">
+    <div style="width: 40%;">
+      <canvas
+          baseChart
+          [chartType]="'line'"
+          [datasets]="chartData"
+          [labels]="chartLabels"
+          [options]="chartOptions"
+          [legend]="true"
+          (chartClick)="onChartClick($event)">
+      </canvas>
+    </div>
+  </div> -->
+  <nz-layout class="ant-layout ant-layout-has-sider">
+    <nz-sider style="flex: 0 0 200px; width: 200px;">
+      <nz-anchor>
+        <nz-link nzHref="#title" nzTitle="谁的青春不迷茫"></nz-link>
+        <nz-link nzHref="#ability" nzTitle="ta的超能力"></nz-link>
+        <nz-link nzHref="#friends" nzTitle="ta的圈子@"></nz-link>
+        <nz-link nzHref="#skill" nzTitle="ta喜欢的技术"></nz-link>
+        <nz-link nzHref="#skill" nzTitle="ta的博客"></nz-link>
+
+        <nz-link nzHref="#games" nzTitle="ta爱玩的游戏">
+          <nz-link nzHref="#lol" nzTitle="lol"></nz-link>
+          <nz-link nzHref="#dn" nzTitle="dn"></nz-link>
+        </nz-link>
+      </nz-anchor>
+    </nz-sider>
+    <nz-content class="ant-layout-content">
+      <div id="title">
+        奔跑吧, 疯子!
+      </div>
+
+      <div id="ability">
+
+      </div>
+    </nz-content>
+  </nz-layout>
 </div>

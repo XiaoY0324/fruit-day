@@ -8,7 +8,7 @@
     Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
 
-<video autoplay loop id="video-background" *ngIf="nowLab === 'trip'">
+<video autoplay loop id="video-background" [ngSwitch]="nowLab" *ngIf="nowLab === 'trip'">
   <source src="../../assets/videos/red-flower.mp4" type="video/mp4" />
     Your browser does not support the video tag. I suggest you upgrade your browser.
 </video>
