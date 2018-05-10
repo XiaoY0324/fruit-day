@@ -20,6 +20,6 @@ app.all('*', function(req, res, next) {
 
 app.use('/home/', homeApi);
 
-app.listen(3000, () => {
-  console.log('server listening at port 3000...');
+app.listen(8000, () => {
+  console.log('server listening at port 8000...');
 });
