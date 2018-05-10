@@ -5,6 +5,7 @@ import homeApi from './api/home';
 console.log(process.env.NODE_ENV);
 
 const app = express();
+const router = Router();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,8 +19,12 @@ app.all('*', function(req, res, next) {
     else  next();
 })
 
+app.get('/', function(req, res){
+  res.send('hello world');
+});
+
 app.use('/home/', homeApi);
 
-app.listen(8000, () => {
-  console.log('server listening at port 8000...');
+app.listen(8989, () => {
+  console.log('server listening at port 8989...');
 });
