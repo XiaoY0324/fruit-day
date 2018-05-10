@@ -22,7 +22,7 @@ export class TabContentComponent implements OnInit {
       this.isLoading = false;
     }, 1000);
 
-    this.http.get(`https://yangshuaiweb.com:8000/home/user/`).subscribe(data => {
+    this.http.get(`https://yangshuaiweb.com:3000/home/user/`).subscribe(data => {
       console.log(data);
     });
   }
