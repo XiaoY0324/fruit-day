@@ -17,14 +17,14 @@ gulp.task('nodemon', cb => {
 });
 
 gulp.task('transform', () => {
-  return gulp.src('server/*.js')
+  return gulp.src(['server/*.js', 'server/*/*.js', 'config/*.js'])
     .pipe(babel())
     .pipe(gulp.dest('lib'));
 });
 
 gulp.task('watch', () => {
-  return gulp.src('server/*.js')
-    .pipe(watch('server/*.js', {
+  return gulp.src(['server/*.js', 'server/*/*.js', 'config/*.js'])
+    .pipe(watch(['server/*.js', 'server/*/*.js', 'config/*.js'], {
       verbose: true
     }))
     .pipe(babel())
