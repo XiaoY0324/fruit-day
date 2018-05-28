@@ -21,6 +21,7 @@ export class TabContentComponent implements OnInit {
     setTimeout(() => {
       this.isLoading = false;
     }, 1000);
+
     this.http.get(`https://yangshuaiweb.com:4200/aws/home/user/`).subscribe(data => {
       console.log(data);
     });

@@ -2,7 +2,7 @@ import express, { Router } from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import homeApi from './api/home';
-console.log(process.env.NODE_ENV);
+console.log(process.argv[2]);
 
 const app = express();
 const router = Router();
@@ -19,11 +19,7 @@ app.all('*', function(req, res, next) {
     else  next();
 })
 
-app.get('/', function(req, res){
-  res.send('hello world');
-});
-
-app.use('/home/', homeApi);
+app.use('/aws2/home/', homeApi);
 
 app.listen(8989, () => {
   console.log('server listening at port 8989...');
