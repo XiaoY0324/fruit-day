@@ -7,9 +7,13 @@ import { Routes, RouterModule } from '@angular/router';
 // import { MyExperienceComponent } from './tab-content/tpls/my-experience/my-experience.component';
 // import { MyStateComponent } from './tab-content/tpls/my-state/my-state.component';
 import { HomeComponent } from './page/home/home.component';
-
+import { RegisterComponent } from './login/register/register.component';
 
 const routes: Routes = [
+  {
+    path: 'login',
+    component: RegisterComponent,
+  },
   {
     path: 'home',
     component: HomeComponent,
@@ -38,7 +42,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/login',
     pathMatch: 'full'
   }
 ];

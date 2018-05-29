@@ -8,20 +8,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { ChartsModule } from 'ng2-charts'; // 默认读取xxx.d.ts
 
 import { AppComponent } from './app.component';
+// import { HeaderComponent } from './shared/header/header.component';
 
 import { PageModule } from './page/page.module';
-// import { HeaderTabComponent } from './header-tab/header-tab.component';
-// import { InfoCardComponent } from './info-card/info-card.component';
-// import { TabContentComponent } from './tab-content/tab-content.component';
-// import { MyLivingComponent } from './tab-content/tpls/my-living/my-living.component';
-// import { MyTripComponent } from './tab-content/tpls/my-trip/my-trip.component';
-// import { MyExperienceComponent } from './tab-content/tpls/my-experience/my-experience.component';
-// import { MyStateComponent } from './tab-content/tpls/my-state/my-state.component';
-// import { MoreComponent } from './tab-content/tpls/more/more.component';
+import { LoginModule } from './login/login.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // HeaderComponent
   ],
   imports: [
     AppRoutingModule,
@@ -32,7 +28,9 @@ import { PageModule } from './page/page.module';
     // NgZorroAntdModule.forRoot(),
     ChartsModule,
 
+    SharedModule,
     PageModule,
+    LoginModule,
   ],
   bootstrap: [AppComponent]
 })
