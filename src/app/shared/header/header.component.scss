@@ -1,6 +1,10 @@
-body,ul,li,dd,dt,dl,h1,h2,h3,h4,h5,h6,p,input{margin: 0;padding: 0};
+body, ul, li, dd, dt, dl, h1, h2, h3, h4, h5, h6, p, input {
+  margin: 0;
+  padding: 0;
+};
+
 img {
-  border: 0
+  border: 0;
 }
 
 li {
@@ -8,15 +12,15 @@ li {
 }
 
 .left {
-  float: left
+  float: left;
 }
 
 .right {
-  float: right
+  float: right;
 }
 
 li {
-  list-style: none
+  list-style: none;
 }
 
 #wrap {
@@ -53,15 +57,15 @@ li {
   width: 15px;
   height: 12px;
   margin-right: 7px;
-  // background: url(../topNav0.jpg) no-repeat;
+  background: url(https://yangshuaiweb.com:9913/topNav0.jpg) no-repeat;
 }
 
 #topNav span i {
   display: inline-block;
   width: 10px;
   height: 7px;
-  // background: url(../topNav.jpg);
-  margin:0 16px 0 8px;
+  background: url(https://yangshuaiweb.com:9913/topNav.jpg);
+  margin: 0 16px 0 8px;
 }
 
 #topNav p a {
@@ -81,7 +85,7 @@ li {
 
 #topNav ul {
   margin-top: 9px;
-  margin-right: 60px
+  margin-right: 60px;
 }
 
 #topNav .hide {
@@ -165,88 +169,109 @@ li {
   margin: 0 auto;
 }
 
-#topNav .hide2 .h2_p1{
+#topNav .hide2 .h2_p1 {
   float: left;
   margin-left: 26px;
  }
-  #topNav .hide2 .h2_p1 a{
+
+#topNav .hide2 .h2_p1 a {
     text-align: center;
- }
- #topNav .hide2 .h2_p1:hover a{
+}
+
+#topNav .hide2 .h2_p1:hover a {
   text-decoration: none;
- }
- #topNav .hide2 .h2_box1 .h2_p2{
+}
+
+#topNav .hide2 .h2_box1 .h2_p2{
   width: 100px;
   height: 100px;
   float: left;
   margin-left: 7px;
 }
- #topNav .hide2 .h2_box1 .h2_p3,#topNav .hide2 .h2_box1 .h2_p4{
+
+#topNav .hide2 .h2_box1 .h2_p3, #topNav .hide2 .h2_box1 .h2_p4{
   margin-left: 7px;
 }
+
 #topNav .hide2 .h2_box1 .h2_p3{
   margin-top: 9px;
   margin-bottom: 14px;
 }
+
 #topNav .hide2 .h2_p5{
   margin-top: 27px;
   margin-left: 7px;
 }
+
 #topNav .hide2 .h2_p6{
   margin-left: 7px;
   margin-top: 54px;
   margin-bottom: -12px;
 }
-#topNav .hide2 .h2_p6:hover a{
+
+#topNav .hide2 .h2_p6:hover a {
   text-decoration: none;
 }
-#topNav .hide2 .h2_p7{
+
+#topNav .hide2 .h2_p7 {
   margin-left: 114px;
 }
-#topNav .hide2 .h2_p7:hover a{
+
+#topNav .hide2 .h2_p7:hover a {
   text-decoration: none;
 }
+
 #pic_nav{
   cursor: pointer;
 }
-#topNav .topNav_ul1 .hide_li:hover{
+
+#topNav .topNav_ul1 .hide_li:hover {
   background: #FFF;
 }
-#topNav .topNav_ul1 li a{
+
+#topNav .topNav_ul1 li a {
   border-right: 1px solid #999999;
 }
- #topNav .topNav_ul1 li .border_a{
+
+#topNav .topNav_ul1 li .border_a{
   border: 0;
- }
-#topNav ul li{
+}
+
+#topNav ul li {
   float:left;
   height: 13px;
   line-height: 13px;
 }
-#topNav .topNav_ul1{
+
+#topNav .topNav_ul1 {
   margin-top: 0;
   height: 30px;
 }
-#topNav .topNav_ul1 li{
+
+#topNav .topNav_ul1 li {
   height: 30px;
   line-height: 30px;
 }
-#topNav ul li img{
+
+#topNav ul li img {
   margin-top: 6px;
   display: inline-block;
   float: left;
   margin-left: 10px
 }
-#topNav ul a{
+
+#topNav ul a {
   text-decoration: none;
   color: #999999;
   font-size: 11px;
   padding: 0 10px 0 10px;
 }
-#topNav ul .topNav_li{
+
+#topNav ul .topNav_li {
   border: 0
 }
-#topNav .select{
+
+#topNav .select {
   width: 250px;
   height: 400px;
   position: absolute;
@@ -257,51 +282,63 @@ li {
   overflow-y: scroll;
   display: none;
 }
-#fix-c{
+
+#fix-c {
   width: 36px;
   height: 111px;
   position: fixed;
-  right: 0px;
+  right: 7px;
+  bottom: 100px;
   z-index: 11;
 }
-#fix-c a{
+
+#fix-c a {
   display: block;
   width: 36px;
   height: 36px;
   border-radius: 10;
   margin-top: 2px;
 }
-#fix-c img{
+
+#fix-c img {
   width: 36px;
   height: 36px;
 }
-#fix-c .c_a1{
-  // background: url(../img/e3.png);
+
+#fix-c .c_a1 {
+  background: url(https://yangshuaiweb.com:9913/e3.png);
 }
-#fix-c .c_a2{
-  // background: url(../img/e2.png);
+
+#fix-c .c_a2 {
+  background: url(https://yangshuaiweb.com:9913/e2.png);
 }
-#fix-c .c_a3{
-  // background: url(../img/e.png);
+
+#fix-c .c_a3 {
+  background: url(https://yangshuaiweb.com:9913/e.png);
 }
-#topNav .select span{
+
+#topNav .select span {
   margin-left: 14px;
 }
-#topNav .select p{
+
+#topNav .select p {
   margin-left: 15px;
   background: #f1f1f1;
   width: 205px;
   margin-top: 4px;
 }
-#topNav .select p a{
+
+#topNav .select p a {
   color: black;
   text-decoration: none;
   margin-left: 3px;
 }
-#topNav .select_div{
+
+#topNav .select_div {
   margin-left: 5px;
 }
-#topNav .select_div div{
+
+#topNav .select_div div {
   width: 220px;
   float: none;
   border: none;
@@ -310,29 +347,36 @@ li {
   line-height: 41px;
   text-indent: 4px;
 }
-#topNav .select_div div a{
+
+#topNav .select_div div a {
   font-size: 14px;
   color: black;
   text-decoration: none;
   display: block;
 }
-#topNav .select_div div:hover{
+
+#topNav .select_div div:hover {
   background: #999999;
   cursor: pointer;
 }
-#topNav .select_div div:hover a{
+
+#topNav .select_div div:hover a {
   color: green;
 }
- #topNav .select_div .select_span{
+
+#topNav .select_div .select_span {
   margin-left: 147px;
   font-size: 22px;
 }
-#topNav .select_div span:hover{
+
+#topNav .select_div span:hover {
   background: #999999;
 }
-#topNav .select_div ul{
+
+#topNav .select_div ul {
   display: none;
 }
+
 #topNav .select_div ul li{
   border: 0;
   float: none;
@@ -342,26 +386,31 @@ li {
   text-indent: 40px;
   width: 220px;
 }
-#topNav .select_div ul li:hover a{
+
+#topNav .select_div ul li:hover a {
   color: green;
 }
+
 /* 主导航 */
-#mainNav{
+#mainNav {
   width: 100%;
   height: 120px;
 }
-#mainNav .main_p1{
+
+#mainNav .main_p1 {
   margin-left: 84px;
   margin-top: 25px;
   width:342px;
 }
-#mainNav ul li{
+
+#mainNav ul li {
   float: left;
   text-align: center;
   height: 114px;
   margin-top: 2px;
 }
-#mainNav ul li a{
+
+#mainNav ul li a {
   text-decoration: none;
   width: 30px;
   display: inline-block;
@@ -370,48 +419,59 @@ li {
   border-right: 1px solid #eeeeee;
   color:#999999;
 }
-#mainNav ul .main_a{
+
+#mainNav ul .main_a {
   width: 57px;
   border:0;
 }
-#mainNav ul li:hover a{
+
+#mainNav ul li:hover a {
   background: #eeeeee;
 }
-#mainNav ul .n a{
+
+#mainNav ul .n a {
   color: green;
 }
-#mainNav ul .n{
+
+#mainNav ul .n {
   border-bottom: 2px solid green;
 }
-.main_p1 img{
+
+.main_p1 img {
   cursor: pointer;
 }
-.mainNav_rightBox{
+
+.mainNav_rightBox {
   margin-top: 41px;
   margin-left: 143px;
   font-size: 11px;
 }
-.mainNav_rightBox input{
+
+.mainNav_rightBox input {
   outline-style: none;
   height: 27px;
   border: none;
 }
-.mainNav_rightBox .main_p2{
+
+.mainNav_rightBox .main_p2 {
   border-bottom: 1px solid gray;
   height: 29px;
 }
-.mainNav_rightBox .main_btn{
+
+.mainNav_rightBox .main_btn {
   cursor:pointer;
   height: 29px;
   width: 32px;
-  // background: url(../img/n.png) 7px 8px no-repeat;
+  background: url(https://yangshuaiweb.com:9913/n.png) 7px 8px no-repeat;
 }
-.mainNav_rightBox .main_p3 a{
+
+.mainNav_rightBox .main_p3 a {
   text-decoration: none;
   color: #b299b2;
   margin-right: 12px
 }
-.main_p4{
+
+.main_p4 {
   margin-left: 18px;
   margin-top: 42px;
 }

@@ -1,0 +1,74 @@
+.register {
+  .pic_nav {
+    width: 100%;
+    height: 120px;
+    box-shadow: 0 2px 8px rgba(230,230,230,0.75);
+    border-bottom: 1px solid #f1f1f1;
+    background: url(https://yangshuaiweb.com:9913/re.png) 83px 24px no-repeat;
+  }
+
+  .register-content {
+    padding-top: 50px;
+
+    .member {
+      font-size: 20px;
+      font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+      color: #999999;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 36px;
+    }
+
+    .login-sec {
+      .login-left {
+        position: relative;
+
+        .login {
+          position: absolute;
+          bottom: 21px;
+          left: 175px;
+        }
+
+        .login > a {
+          padding: 12px 33px;
+          height: 48px;
+          border-radius: 4px;
+          background-color: #64a131!important;
+          color: #64a131!important;
+          background-color: #fff!important;
+          box-shadow: none!important;
+          border-color: #64a131!important;
+          text-align: center;
+        }
+      }
+
+      .login-right {
+        padding-left: 60px;
+        width: 500px;
+
+        label {
+          font-weight: 400;
+          font-size: 16px;
+          color: #999999;
+        }
+      }
+
+      .login-right .form-group {
+        margin-bottom: 23px !important;
+
+        input {
+          width: 300px;
+          height: 40px;
+          outline: none;
+          border-radius: 0;
+          font-family: arial;
+
+          &:focus {
+            border-color: #64A131;
+          }
+        }
+      }
+    }
+  }
+}
