@@ -10,6 +10,23 @@
   .register-content {
     padding-top: 50px;
 
+    .with-captcha {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 5px;
+        right: -78px;
+        width: 84px;
+        height: 28px;
+        cursor: pointer;
+      }
+
+      input {
+        padding-right: 80px;
+      }
+    }
+
     .member {
       font-size: 20px;
       font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif;
