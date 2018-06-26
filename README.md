@@ -1,4 +1,4 @@
-# Angular5Web
+# Angular6 Web
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
@@ -29,3 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## node version
 node 7
+
+## 技术点
+
+  - 二维码  ## svg-captcha-smooth
+  - 数据库  ## mysql

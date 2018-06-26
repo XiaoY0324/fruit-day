@@ -3,7 +3,7 @@ import watch from 'gulp-watch';
 import babel from 'gulp-babel';
 import nodemon from 'gulp-nodemon';
 
-gulp.task('nodemon', cb => {
+gulp.task('nodemon', ['transform'] ,cb => {
   let started = false;
 
   return nodemon({
@@ -31,4 +31,4 @@ gulp.task('watch', () => {
     .pipe(gulp.dest('lib'));
 });
 
-gulp.task('default',['transform', 'nodemon', 'watch']);
+gulp.task('default',['transform', 'watch', 'nodemon']);

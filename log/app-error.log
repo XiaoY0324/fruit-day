@@ -1,0 +1,312 @@
+[2018-06-26T14:33:55.597][ERROR  76593  cheese] Cheese is too ripe!
+[2018-06-26T14:33:55.597][FATAL  76593  cheese] Cheese was breeding ground for listeria.
+[2018-06-26T14:33:56.178][ERROR  76599  cheese] Cheese is too ripe!
+[2018-06-26T14:33:56.178][FATAL  76599  cheese] Cheese was breeding ground for listeria.
+[2018-06-26T14:34:23.752][ERROR  76604  cheese] Cheese is too ripe!
+[2018-06-26T14:34:23.753][FATAL  76604  cheese] Cheese was breeding ground for listeria.
+[2018-06-26T14:35:05.601][ERROR  76619  cheese] Cheese is too ripe!
+[2018-06-26T14:35:05.601][FATAL  76619  cheese] Cheese was breeding ground for listeria.
+[2018-06-26T14:35:06.873][ERROR  76625  cheese] Cheese is too ripe!
+[2018-06-26T14:35:06.873][FATAL  76625  cheese] Cheese was breeding ground for listeria.
+[2018-06-26T14:35:34.205][ERROR  76632  cheese] error
+[2018-06-26T14:35:34.205][FATAL  76632  cheese] fatal
+[2018-06-26T14:35:34.860][ERROR  76638  cheese] error
+[2018-06-26T14:35:34.860][FATAL  76638  cheese] fatal
+[2018-06-26T14:43:18.156][ERROR  76664  cheese] error
+[2018-06-26T14:43:18.156][FATAL  76664  cheese] fatal
+[2018-06-26T14:43:29.554][ERROR  76664  cheese] ReferenceError: logger is not defined
+    at /Users/ys/workspace/fruit-day/lib/api/home.js:64:3
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:47:12)
+[2018-06-26T14:43:43.483][ERROR  76671  cheese] error
+[2018-06-26T14:43:43.483][FATAL  76671  cheese] fatal
+[2018-06-26T14:43:45.067][ERROR  76671  cheese] ReferenceError: logger is not defined
+    at /Users/ys/workspace/fruit-day/lib/api/home.js:67:3
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:47:12)
+[2018-06-26T14:44:17.874][ERROR  76680  cheese] error
+[2018-06-26T14:44:17.874][FATAL  76680  cheese] fatal
+[2018-06-26T14:44:20.015][ERROR  76680  cheese] ReferenceError: logger is not defined
+    at /Users/ys/workspace/fruit-day/lib/api/home.js:68:3
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:47:12)
+[2018-06-26T14:44:44.120][ERROR  76686  cheese] error
+[2018-06-26T14:44:44.121][FATAL  76686  cheese] fatal
+[2018-06-26T14:45:00.619][ERROR  76692  cheese] error
+[2018-06-26T14:45:00.619][FATAL  76692  cheese] fatal
+[2018-06-26T14:45:02.154][ERROR  76699  cheese] error
+[2018-06-26T14:45:02.154][FATAL  76699  cheese] fatal
+[2018-06-26T14:45:22.302][ERROR  76706  cheese] error
+[2018-06-26T14:45:22.302][FATAL  76706  cheese] fatal
+[2018-06-26T14:45:27.720][ERROR  76713  cheese] error
+[2018-06-26T14:45:27.720][FATAL  76713  cheese] fatal
+[2018-06-26T14:45:34.815][ERROR  76720  cheese] error
+[2018-06-26T14:45:34.815][FATAL  76720  cheese] fatal
+[2018-06-26T14:45:48.402][ERROR  76727  cheese] error
+[2018-06-26T14:45:48.403][FATAL  76727  cheese] fatal
+[2018-06-26T14:45:51.767][ERROR  76734  cheese] error
+[2018-06-26T14:45:51.768][FATAL  76734  cheese] fatal
+[2018-06-26T14:46:09.047][ERROR  76741  cheese] error
+[2018-06-26T14:46:09.047][FATAL  76741  cheese] fatal
+[2018-06-26T14:46:15.003][ERROR  76748  cheese] error
+[2018-06-26T14:46:15.003][FATAL  76748  cheese] fatal
+[2018-06-26T14:46:23.014][ERROR  76755  cheese] error
+[2018-06-26T14:46:23.014][FATAL  76755  cheese] fatal
+[2018-06-26T14:46:59.560][ERROR  76765  cheese] error
+[2018-06-26T14:46:59.560][FATAL  76765  cheese] fatal
+[2018-06-26T14:47:07.937][ERROR  76772  cheese] error
+[2018-06-26T14:47:07.937][FATAL  76772  cheese] fatal
+[2018-06-26T14:47:15.522][ERROR  76772  cheese] TypeError: logger.war is not a function
+    at /Users/ys/workspace/fruit-day/lib/api/home.js:65:10
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:47:12)
+[2018-06-26T14:47:28.849][ERROR  76778  cheese] error
+[2018-06-26T14:47:28.849][FATAL  76778  cheese] fatal
+[2018-06-26T14:47:38.874][ERROR  76786  cheese] error
+[2018-06-26T14:47:38.875][FATAL  76786  cheese] fatal
+[2018-06-26T14:47:44.352][ERROR  76791  cheese] error
+[2018-06-26T14:47:44.353][FATAL  76791  cheese] fatal
+[2018-06-26T14:47:46.808][ERROR  76799  cheese] error
+[2018-06-26T14:47:46.808][FATAL  76799  cheese] fatal
+[2018-06-26T14:47:50.038][ERROR  76799  cheese] TypeError: connection.query2 is not a function
+    at /Users/ys/workspace/fruit-day/lib/api/home.js:67:16
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:47:12)
+[2018-06-26T14:48:08.990][ERROR  76806  cheese] error
+[2018-06-26T14:48:08.991][FATAL  76806  cheese] fatal
+[2018-06-26T14:53:33.071][ERROR  76816  cheese] error
+[2018-06-26T14:53:33.071][FATAL  76816  cheese] fatal
+[2018-06-26T14:53:41.353][ERROR  76823  cheese] error
+[2018-06-26T14:53:41.354][FATAL  76823  cheese] fatal
+[2018-06-26T14:53:44.281][ERROR  76823  cheese] { message: '验证码错误' }
+[2018-06-26T14:54:36.450][ERROR  76830  cheese] error
+[2018-06-26T14:54:36.450][FATAL  76830  cheese] fatal
+[2018-06-26T14:59:39.084][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T14:59:40.969][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T14:59:46.917][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T15:04:09.093][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T15:05:23.348][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T15:10:27.410][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T15:10:37.516][ERROR  76830  cheese] { message: '验证码错误' }
+[2018-06-26T15:12:55.990][ERROR  76892  cheese] error
+[2018-06-26T15:12:55.990][FATAL  76892  cheese] fatal
+[2018-06-26T15:13:19.845][ERROR  76900  cheese] error
+[2018-06-26T15:13:19.846][FATAL  76900  cheese] fatal
+[2018-06-26T15:13:23.234][ERROR  76907  cheese] error
+[2018-06-26T15:13:23.235][FATAL  76907  cheese] fatal
+[2018-06-26T15:13:39.991][ERROR  76915  cheese] error
+[2018-06-26T15:13:39.992][FATAL  76915  cheese] fatal
+[2018-06-26T15:13:47.038][ERROR  76922  cheese] error
+[2018-06-26T15:13:47.038][FATAL  76922  cheese] fatal
+[2018-06-26T15:14:09.795][ERROR  76929  cheese] error
+[2018-06-26T15:14:09.796][FATAL  76929  cheese] fatal
+[2018-06-26T15:16:01.781][ERROR  76937  cheese] error
+[2018-06-26T15:16:01.781][FATAL  76937  cheese] fatal
+[2018-06-26T15:16:31.635][ERROR  76945  cheese] error
+[2018-06-26T15:16:31.635][FATAL  76945  cheese] fatal
+[2018-06-26T15:16:35.831][ERROR  76954  cheese] error
+[2018-06-26T15:16:35.831][FATAL  76954  cheese] fatal
+[2018-06-26T15:17:10.770][ERROR  76962  cheese] error
+[2018-06-26T15:17:10.770][FATAL  76962  cheese] fatal
+[2018-06-26T15:22:55.861][ERROR  76972  cheese] error
+[2018-06-26T15:22:55.862][FATAL  76972  cheese] fatal
+[2018-06-26T15:23:41.440][ERROR  76977  cheese] error
+[2018-06-26T15:23:41.440][FATAL  76977  cheese] fatal
+[2018-06-26T15:25:21.513][ERROR  76981  cheese] error
+[2018-06-26T15:25:21.513][FATAL  76981  cheese] fatal
+[2018-06-26T15:26:59.550][ERROR  76988  cheese] error
+[2018-06-26T15:26:59.550][FATAL  76988  cheese] fatal
+[2018-06-26T15:27:03.741][ERROR  76992  cheese] error
+[2018-06-26T15:27:03.741][FATAL  76992  cheese] fatal
+[2018-06-26T15:27:44.700][ERROR  76994  cheese] error
+[2018-06-26T15:27:44.700][FATAL  76994  cheese] fatal
+[2018-06-26T15:27:57.316][ERROR  76998  cheese] error
+[2018-06-26T15:27:57.317][FATAL  76998  cheese] fatal
+[2018-06-26T15:28:26.845][ERROR  77002  cheese] error
+[2018-06-26T15:28:26.846][FATAL  77002  cheese] fatal
+[2018-06-26T15:28:50.294][ERROR  77025  cheese] error
+[2018-06-26T15:28:50.295][FATAL  77025  cheese] fatal
+[2018-06-26T15:32:54.461][ERROR  77025  cheese] { message: '验证码错误' }
+[2018-06-26T15:32:59.903][ERROR  77025  cheese] { message: '该账号已注册' }
+[2018-06-26T15:33:02.384][ERROR  77025  cheese] { message: '该账号已注册' }
+[2018-06-26T15:33:03.026][ERROR  77025  cheese] { message: '该账号已注册' }
+[2018-06-26T15:33:16.956][ERROR  77043  cheese] error
+[2018-06-26T15:33:16.956][FATAL  77043  cheese] fatal
+[2018-06-26T15:33:19.475][ERROR  77043  cheese] { message: '该账号已注册' }
+[2018-06-26T15:33:25.971][ERROR  77074  cheese] error
+[2018-06-26T15:33:25.971][FATAL  77074  cheese] fatal
+[2018-06-26T15:34:15.997][ERROR  77074  cheese] { message: '该账号已注册' }
+[2018-06-26T15:35:21.988][ERROR  77081  cheese] error
+[2018-06-26T15:35:21.989][FATAL  77081  cheese] fatal
+[2018-06-26T15:35:33.142][ERROR  77090  cheese] error
+[2018-06-26T15:35:33.143][FATAL  77090  cheese] fatal
+[2018-06-26T15:35:34.370][ERROR  77090  cheese] { message: '该账号已注册' }
+[2018-06-26T15:36:35.943][ERROR  77095  cheese] error
+[2018-06-26T15:36:35.944][FATAL  77095  cheese] fatal
+[2018-06-26T15:36:39.992][FATAL  77095  cheese] 1
+[2018-06-26T15:36:39.992][FATAL  77095  cheese] 3
+[2018-06-26T15:36:39.993][FATAL  77095  cheese] 4
+[2018-06-26T15:36:39.995][FATAL  77095  cheese] 6
+[2018-06-26T15:36:39.995][ERROR  77095  cheese] { message: '该账号已注册' }
+[2018-06-26T15:37:22.850][ERROR  77101  cheese] error
+[2018-06-26T15:37:22.851][FATAL  77101  cheese] fatal
+[2018-06-26T15:37:25.898][FATAL  77101  cheese] 1
+[2018-06-26T15:37:25.899][FATAL  77101  cheese] 3
+[2018-06-26T15:37:25.899][FATAL  77101  cheese] 4
+[2018-06-26T15:37:25.901][FATAL  77101  cheese] 6
+[2018-06-26T15:37:25.901][ERROR  77101  cheese] { message: '该账号已注册' }
+[2018-06-26T15:38:26.414][ERROR  77107  cheese] error
+[2018-06-26T15:38:26.415][FATAL  77107  cheese] fatal
+[2018-06-26T15:38:28.865][FATAL  77107  cheese] 1
+[2018-06-26T15:38:28.866][FATAL  77107  cheese] 3
+[2018-06-26T15:38:28.866][FATAL  77107  cheese] 4
+[2018-06-26T15:38:28.868][FATAL  77107  cheese] 6
+[2018-06-26T15:38:28.869][ERROR  77107  cheese] { message: '该账号已注册' }
+[2018-06-26T15:49:16.241][ERROR  77170  cheese] error
+[2018-06-26T15:49:16.241][FATAL  77170  cheese] fatal
+[2018-06-26T15:50:08.998][ERROR  77176  cheese] error
+[2018-06-26T15:50:08.998][FATAL  77176  cheese] fatal
+[2018-06-26T15:50:10.299][FATAL  77176  cheese] 1
+[2018-06-26T15:50:10.299][FATAL  77176  cheese] 3 { message: '该账号已注册' }
+[2018-06-26T15:50:10.300][FATAL  77176  cheese] 4
+[2018-06-26T15:50:10.301][FATAL  77176  cheese] 6
+[2018-06-26T15:50:10.302][ERROR  77176  cheese] { message: '该账号已注册' }
+[2018-06-26T15:50:24.984][ERROR  77182  cheese] error
+[2018-06-26T15:50:24.984][FATAL  77182  cheese] fatal
+[2018-06-26T15:50:50.869][ERROR  77189  cheese] error
+[2018-06-26T15:50:50.869][FATAL  77189  cheese] fatal
+[2018-06-26T15:51:24.224][ERROR  77199  cheese] error
+[2018-06-26T15:51:24.224][FATAL  77199  cheese] fatal
+[2018-06-26T15:51:26.656][FATAL  77199  cheese] 1
+[2018-06-26T15:51:26.657][FATAL  77199  cheese] 3
+[2018-06-26T15:51:26.657][FATAL  77199  cheese] 6
+[2018-06-26T15:51:26.657][ERROR  77199  cheese] { message: '该账号已注册' }
+[2018-06-26T15:51:53.415][ERROR  77209  cheese] error
+[2018-06-26T15:51:53.416][FATAL  77209  cheese] fatal
+[2018-06-26T15:51:59.578][ERROR  77214  cheese] error
+[2018-06-26T15:51:59.579][FATAL  77214  cheese] fatal
+[2018-06-26T15:52:16.416][ERROR  77222  cheese] error
+[2018-06-26T15:52:16.417][FATAL  77222  cheese] fatal
+[2018-06-26T15:52:17.412][ERROR  77228  cheese] error
+[2018-06-26T15:52:17.412][FATAL  77228  cheese] fatal
+[2018-06-26T15:52:35.318][FATAL  77228  cheese] 1
+[2018-06-26T15:52:35.320][FATAL  77228  cheese] 2
+[2018-06-26T15:52:43.196][FATAL  77228  cheese] 1
+[2018-06-26T15:52:43.196][FATAL  77228  cheese] 2
+[2018-06-26T15:53:32.732][ERROR  77233  cheese] error
+[2018-06-26T15:53:32.732][FATAL  77233  cheese] fatal
+[2018-06-26T15:53:38.605][ERROR  77245  cheese] error
+[2018-06-26T15:53:38.606][FATAL  77245  cheese] fatal
+[2018-06-26T15:53:44.999][FATAL  77245  cheese] 1
+[2018-06-26T15:53:44.999][FATAL  77245  cheese] 2
+[2018-06-26T15:54:20.019][ERROR  77256  cheese] error
+[2018-06-26T15:54:20.020][FATAL  77256  cheese] fatal
+[2018-06-26T15:54:21.154][ERROR  77262  cheese] error
+[2018-06-26T15:54:21.155][FATAL  77262  cheese] fatal
+[2018-06-26T15:54:25.331][FATAL  77262  cheese] 1
+[2018-06-26T15:54:25.332][FATAL  77262  cheese] 2
+[2018-06-26T15:54:25.334][ERROR  77262  cheese] { message: '该账号已注册' }
+[2018-06-26T15:56:09.458][ERROR  77274  cheese] error
+[2018-06-26T15:56:09.458][FATAL  77274  cheese] fatal
+[2018-06-26T15:57:47.146][ERROR  77282  cheese] error
+[2018-06-26T15:57:47.146][FATAL  77282  cheese] fatal
+[2018-06-26T15:57:48.158][ERROR  77288  cheese] error
+[2018-06-26T15:57:48.158][FATAL  77288  cheese] fatal
+[2018-06-26T15:58:05.495][FATAL  77288  cheese] 1
+[2018-06-26T15:58:05.496][FATAL  77288  cheese] 2
+[2018-06-26T15:58:05.497][ERROR  77288  cheese] { message: '该账号已注册' }
+[2018-06-26T15:58:25.750][ERROR  77293  cheese] error
+[2018-06-26T15:58:25.751][FATAL  77293  cheese] fatal
+[2018-06-26T15:58:27.899][FATAL  77293  cheese] 1
+[2018-06-26T15:58:27.900][FATAL  77293  cheese] 2
+[2018-06-26T15:58:27.904][ERROR  77293  cheese] { message: '该账号已注册' }
+[2018-06-26T15:59:26.217][ERROR  77298  cheese] error
+[2018-06-26T15:59:26.217][FATAL  77298  cheese] fatal
+[2018-06-26T15:59:28.374][ERROR  77303  cheese] error
+[2018-06-26T15:59:28.374][FATAL  77303  cheese] fatal
+[2018-06-26T15:59:33.266][ERROR  77311  cheese] error
+[2018-06-26T15:59:33.267][FATAL  77311  cheese] fatal
+[2018-06-26T15:59:39.004][ERROR  77311  cheese] { message: '该账号已注册' }
+[2018-06-26T16:03:23.516][ERROR  77319  cheese] error
+[2018-06-26T16:03:23.516][FATAL  77319  cheese] fatal
+[2018-06-26T16:03:40.567][ERROR  77325  cheese] error
+[2018-06-26T16:03:40.567][FATAL  77325  cheese] fatal
+[2018-06-26T16:04:15.621][ERROR  77334  cheese] error
+[2018-06-26T16:04:15.621][FATAL  77334  cheese] fatal
+[2018-06-26T16:04:17.017][ERROR  77339  cheese] error
+[2018-06-26T16:04:17.017][FATAL  77339  cheese] fatal
+[2018-06-26T16:04:37.974][ERROR  77347  cheese] error
+[2018-06-26T16:04:37.975][FATAL  77347  cheese] fatal
+[2018-06-26T16:04:55.684][ERROR  77355  cheese] error
+[2018-06-26T16:04:55.684][FATAL  77355  cheese] fatal
+[2018-06-26T16:05:02.666][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:03.980][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:04.747][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:05.199][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:05.465][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:05.725][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:05.943][ERROR  77355  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:16.285][ERROR  77362  cheese] error
+[2018-06-26T16:05:16.285][FATAL  77362  cheese] fatal
+[2018-06-26T16:05:25.214][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:26.448][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:27.039][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:27.223][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:27.406][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:27.576][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:52.119][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:52.312][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:52.469][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:05:52.659][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:06:04.639][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:06:04.826][ERROR  77362  cheese] { message: '该账号已注册' }
+[2018-06-26T16:06:20.598][ERROR  77402  cheese] error
+[2018-06-26T16:06:20.598][FATAL  77402  cheese] fatal
+[2018-06-26T16:07:43.871][ERROR  77402  cheese] { message: '该账号已注册' }
+[2018-06-26T16:07:45.137][ERROR  77402  cheese] { message: '该账号已注册' }
+[2018-06-26T16:07:45.343][ERROR  77402  cheese] { message: '该账号已注册' }
+[2018-06-26T16:07:45.698][ERROR  77402  cheese] { message: '该账号已注册' }
+[2018-06-26T16:07:45.887][ERROR  77402  cheese] { message: '该账号已注册' }
+[2018-06-26T16:08:57.606][ERROR  77415  cheese] error
+[2018-06-26T16:08:57.606][FATAL  77415  cheese] fatal
+[2018-06-26T16:24:36.306][ERROR  77448  cheese] error
+[2018-06-26T16:24:36.306][FATAL  77448  cheese] fatal
+[2018-06-26T16:24:38.157][ERROR  77452  cheese] error
+[2018-06-26T16:24:38.158][FATAL  77452  cheese] fatal
+[2018-06-26T16:38:59.404][ERROR  77560  cheese] error
+[2018-06-26T16:38:59.404][FATAL  77560  cheese] fatal

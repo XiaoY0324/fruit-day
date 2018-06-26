@@ -14,7 +14,7 @@
 
           <div class="login-right pull-right">
             <div class="form-content">
-              <form #registerForm="ngForm" (ngSubmit)="submit(registerForm)" novalidate>
+              <form #registerForm="ngForm" (ngSubmit)="login(registerForm)" novalidate>
                 <div class="form-group col-xs-12">
                   <label class="col-sm-4 col-md-offset-1">
                     手机号码
@@ -55,46 +55,10 @@
 
                 <div class="form-group col-xs-12">
                   <label class="col-sm-4 col-md-offset-1">
-                    确认密码
                   </label>
                   <div class="col-sm-7">
-                    <input class="form-control"
-                           type="text"
-                           name="password_sec"
-                           placeholder="请输入手机号码"
-                           [(ngModel)]="queryParams.password_sec"
-                           required/>
-
-<!--                     <span class="text-danger"
-                          *ngIf="mobile.valid">
-                        必填项
-                    </span> -->
-                  </div>
-                </div>
-
-                <div class="form-group col-xs-12">
-                  <label class="col-sm-4 col-md-offset-1">
-                    验证码
-                  </label>
-                  <div class="col-sm-7 with-captcha">
-                    <input class="form-control"
-                           type="text"
-                           name="verification_code"
-                           placeholder="请输入手机号码"
-                           [(ngModel)]="queryParams.verification_code"
-                           required/>
-                    <img [src]="captchaSrc" (click)="refreshCaptcha()" alt="">
-                  </div>
-                </div>
-
-
-
-                <div class="form-group col-xs-12">
-                  <label class="col-sm-4 col-md-offset-1">
-                  </label>
-                  <div class="col-sm-7">
-                    <button type="button" class="btn btn-success pull-right" routerLink="/login">登录</button>
-                    <button type="submit" class="btn btn-success pull-left" >注册会员</button>
+                    <button type="button" class="btn btn-success pull-right" routerLink="/register">注册会员</button>
+                    <button type="submit" class="btn btn-success pull-left" [disabled]="!registerForm.form.valid">登录</button>
                   </div>
                 </div>
               </form>
