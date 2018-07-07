@@ -1,7 +1,6 @@
 import express, { Router } from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-import homeApi from './api/home';
 import session from 'express-session';
 // import sessionFileStore from 'session-file-store';  // 储存在session file
 import moment from 'moment';
@@ -9,6 +8,9 @@ import log4js from 'log4js';
 // const FileStore = sessionFileStore(session);
 import redis from 'redis';
 import connectRedis from 'connect-redis';
+
+import homeApi from './api/home';
+import goodsApi from './api/goods';
 
 const RedisStore = connectRedis(session); // 储存在redis里
 // 创建Redis客户端
@@ -49,6 +51,7 @@ app.all('*', function(req, res, next) {
 })
 
 app.use('/aws/home/', homeApi);
+app.use('/aws/goods/', goodsApi);
 
 app.use((err, req, res, next) => {
   res.status(err.status || 500);

@@ -1,0 +1,222 @@
+.home {
+  .home-content {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+
+  .loin-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-top: 7px;
+
+    > p img {
+      width: 300px;
+      height: 140px;
+    }
+  }
+
+  .item-header {
+    margin-top: 22px;
+    padding-top: 13px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+
+    > a {
+      float: right;
+      color: #333;
+      font-size: 14px;
+      position: relative;
+      left: -15px;
+    }
+
+    .right-arrow {
+      display: inline-block;
+      position: relative;
+      width: 36px;
+      height: 36px;
+      margin-right: 20px;
+      position: absolute;
+      top: -6px;
+      left: 10px;
+    }
+
+    .right-arrow::after {
+        display: inline-block;
+        content: " ";
+        height: 8px;
+        width: 8px;
+        border-width: 2px 2px 0 0;
+        border-color: #333;
+        border-style: solid;
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        margin-top: -9px;
+    }
+  }
+
+  .gift-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item:last-child {
+      position: absolute;
+      top: -10000px;
+    }
+
+    .item {
+      width: 248px;
+      height: 305px;
+      margin: 0 5px 5px;
+    }
+
+    .item > p {
+      margin-bottom: 5px !important;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .item > p img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .item-foot {
+      display: flex;
+      height: 48px;
+
+      .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        span:nth-child(2) {
+          margin-left: 5px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #999;
+        }
+      }
+
+      .right {
+        width: 34px;
+        height: 34px;
+
+        img {
+          position: relative;
+          top: 9px;
+          right: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #foot1{
+    height: 148px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+  }
+  #foot1 ul li{
+    float: left;
+    padding: 0 56px 10px 106px;
+    border-right: 1px solid #dddddd;
+    margin-top: 20px;
+  }
+  #foot1 li span{
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .foot1_li1{
+    background: url(https://yangshuaiweb.com:9913/foot1.png) 45px 4px no-repeat;
+  }
+  .foot1_li2{
+    background: url(https://yangshuaiweb.com:9913/foot2.png) 45px 4px no-repeat;
+  }
+  .foot1_li3{
+    background: url(https://yangshuaiweb.com:9913/foot3.png) 7px 4px no-repeat;
+  }
+  #foot1  .foot1_li4{
+    background: url(https://yangshuaiweb.com:9913/foot4.png) 45px -1px no-repeat;
+    border: 0;
+  }
+  #foot2{
+    height:200px;
+    background: url(https://yangshuaiweb.com:9913/m.png) 88px 24px no-repeat;
+  }
+  #foot2 dl{
+    float: left;
+    margin-top: 20px;
+    color: #999999;
+  }
+  #foot2 .dl1 dd,#foot2 .dl2 dd{
+    text-align: center;
+  }
+  #foot2 .dl1{
+    margin-left: 485px;
+    margin-right: 45px;
+  }
+  #foot2 .dl2{
+    margin-right: 75px;
+  }
+  #foot2 .dl3{
+    margin-top: 28px;
+    margin-left: 58px;
+  }
+  #foot2 a{
+    text-decoration: none;
+    color: #999999;
+  }
+  #foot2 dl dt a{
+    color: black;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  #foot2 dl dd{
+    margin-bottom: 18px;
+  }
+  #foot3{
+    height:152px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  #foot3 .foot3_p1{
+    width: 100%;
+    margin-bottom: 10px !important;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  #foot3 .foot3_p2{
+    width: 100%;
+    text-align: center;
+    color: green;
+    margin-bottom: 8px
+  }
+  #foot3 a img{
+    width: 47px;
+    height: 47px;
+  }
+  #foot3 div{
+    width: 144px;
+    margin: 0 auto;
+  }
+  #foot3 a{
+    margin-left: 15px;
+  }
+}
