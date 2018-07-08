@@ -1,0 +1,124 @@
+<div class="goods-detail">
+  <h4 class="bread">
+    <span (click)="hoverImg('https://yangshuaiweb.com:9913/panel.png')">首页 ></span>
+    <span>全部水果 ></span>
+    <span>{{ goodsInfo.goodsName }}</span>
+  </h4>
+
+  <div class="content">
+      <div id="myFocus">
+ <!--        <ul class="dianul left">
+          <li class="a"><img src="https://yangshuaiweb.com:9913/1-270x270-3760-5BFBTPK3.jpg" alt=""/></li>
+          <li class="b"><img src="https://yangshuaiweb.com:9913/u=640443933,1966188878&fm=116&gp=0.jpg" alt=""/></li>
+          <li class="c"><img src="https://yangshuaiweb.com:9913/u=2734540007,1132854300&fm=116&gp=0.jpg" alt=""/></li>
+        </ul>
+ -->
+        <ul class="tuul left">
+          <li class="a"><img [src]="goodsInfo.goodsImg" alt=""/></li>
+
+        </ul>
+        <ul class="hover">
+          <li class="a"><img src="https://yangshuaiweb.com:9913/panel.png" alt=""/></li>
+          <li class="b"><img src="https://yangshuaiweb.com:9913/panel.png" alt=""/></li>
+          <li class="c"><img src="https://yangshuaiweb.com:9913/panel.png" alt=""/></li>
+        </ul>
+      </div>
+      <div class="info">
+        <h3>{{ goodsInfo.goodsName }}</h3>
+        <p class="info-p1">{{ goodsInfo.recommDesc }}</p>
+        <div class="price-info">
+          <div class="price01">
+            <div class="info-box">
+              <span class="info-span1">果园价</span>
+              <span  class="info-span2">{{ '￥' + goodsInfo.price }}</span>
+              <del  class="info-span3">{{ '￥' + goodsInfo.old_price }}</del>
+            </div>
+            <div class="info-box2">
+              <img src="img/guan_ewcode1.jpg" alt="" class="info-b2-span1"/>
+              <img src="img/guan_ewcode1.jpg" alt="" class="info-b2-span2"/>
+            </div>
+          </div>
+          <div class="guide">
+            <p class="guide-p1 left">规格</p>
+            <p class="guide-p2 left">200-300g</p>
+          </div>
+          <div class="send">
+            <p class="send-p1 left">配送至</p>
+            <div class="send-p2 left" ngbDropdown>
+              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{ orderInfo.adress }}</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="dropdown-item" *ngFor="let item of adreeList" (click)="modArea(item)">{{ item }}</button>
+              </div>
+            </div>
+            <p class="send-p3 left">有货</p>
+          </div>
+          <div class="count">
+            <p class="count-p1 left">数量</p>
+            <p class="count-p2 left"><span class="decrement" (click)="modCount(0)">-</span><input type="text" [(ngModel)]="orderInfo.count"/><span class="add" (click)="modCount(1)">+</span></p>
+          </div>
+          <div class="btn-box">
+            <button class="btn-box1">立刻购买</button>
+            <button class="btn-box2">加入购物车</button>
+          </div>
+        </div>
+        <div class="cot">
+          <p class="cot-p">
+            <span>产地</span>
+            <span>{{ orderInfo.adress }}</span>
+          </p>
+          <p class="cot-p">
+            <span>存储方法</span>
+            <span>-18°~0°冷冻</span>
+          </p>
+          <p class="cot-p">
+            <span>说明</span>
+            <span>商品实际重量存在误差(±5%)</span>
+          </p>
+          <p class="cot-p">
+            <span>商品编号</span>
+            <span class="id-span">2151228102</span>
+          </p>
+        </div>
+      </div>
+      <div id="clear"></div>
+        <div class="assess">
+      <div class="a-left left">
+        <div class="a-l-title" id="a-l-title">
+          <p class="a-l-t-p1 left">
+            <span class="a-l-t-p1-span1 left">商品简介</span>
+            <span class="a-l-t-p1-span2 left">顾客评论(1337)</span>
+          </p>
+          <p class="a-l-t-p2 pull-right">
+            <a href="javascript:;" title="加入购物车"><img src="https://yangshuaiweb.com:9913/cars.png" alt="">加入购物车</a>
+          </p>
+          <div id="hide-div">
+            <div class="hide-left left">
+              <img src="https://yangshuaiweb.com:9913/lunbo4.jpg" alt="">
+            </div>
+            <div class="hide-right left">
+              <p>草原牛腱子</p>
+              <p>￥118 / 1000g</p>
+              <p>X1</p>
+              <button>确认</button>
+          </div>
+          </div>
+        </div>
+        <div class="pic">
+          <img src="https://yangshuaiweb.com:9913/14512859902884.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/14512859986100.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/14512860008689.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/14512860019499.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/14512860037812.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/14512860058994.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/1451286007987.jpg" alt="">
+          <img src="https://yangshuaiweb.com:9913/14512860108477.jpg" alt="">
+        </div>
+      </div>
+      <div class="a-right left">
+        <h6>最近浏览过</h6>
+        <ul class="a-r_ul"></ul>
+      </div>
+    </div>
+</div>
+
+

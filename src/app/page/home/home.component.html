@@ -13,7 +13,7 @@
       <img [src]="images[3]" alt="Random third slide">
     </ng-template>
   </ngb-carousel>
-  <div class="home-content">
+  <div class="home-content" *ngIf="goods && goods.length">
     <div class="loin-page">
       <p><img src="https://yangshuaiweb.com:9913/io1.png" alt=""></p>
       <p><img src="https://yangshuaiweb.com:9913/io2.png" alt=""></p>
@@ -22,113 +22,22 @@
     </div>
 
     <h4 class="item-header">
-      <img src="http://www.fruitday.com/images/index/t4.png" alt="">
+      <span>礼品卡券</span>
       <a href="">
         更多
         <i class="right-arrow"></i>
       </a>
     </h4>
     <div class="gift-content">
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
+      <div class="item" *ngFor="let item of filterGift('礼品卡券')">
+        <p [routerLink]="['/detail/' + item.goodsId]"><img [src]="item.goodsImg" alt=""></p>
         <div class="item-foot">
           <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
+            <span>{{ item.goodsName }}</span>
+            <span class="price">￥{{ item.price + '/' + item.packInfo + item.goodsUnit }}</span>
           </div>
           <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
+            <img src="https://yangshuaiweb.com:9913/k.png" (click)="open(item.goodsId)" alt="">
           </div>
         </div>
       </div>
@@ -142,113 +51,22 @@
     </div>
 
     <h4 class="item-header">
-      <img src="http://www.fruitday.com/images/index/t2.png" alt="">
+      <span>全球鲜果</span>
       <a href="">
         更多
         <i class="right-arrow"></i>
       </a>
     </h4>
     <div class="gift-content">
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
+      <div class="item" *ngFor="let item of filterGift('全球鲜果')">
+        <p [routerLink]="['/detail/' + item.goodsId]"><img [src]="item.goodsImg" alt=""></p>
         <div class="item-foot">
           <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
+            <span>{{ item.goodsName }}</span>
+            <span class="price">￥{{ item.price + '/' + item.packInfo + item.goodsUnit }}</span>
           </div>
           <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
+            <img src="https://yangshuaiweb.com:9913/k.png" (click)="open(item.goodsId)" alt="">
           </div>
         </div>
       </div>
@@ -262,117 +80,25 @@
     </div>
 
     <h4 class="item-header">
-      <img src="http://www.fruitday.com/images/index/t3.png" alt="">
+      <span>生鲜美食</span>
       <a href="">
         更多
         <i class="right-arrow"></i>
       </a>
     </h4>
     <div class="gift-content">
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
+      <div class="item" *ngFor="let item of filterGift('生鲜美食')">
+        <p [routerLink]="['/detail/' + item.goodsId]"><img [src]="item.goodsImg" alt=""></p>
         <div class="item-foot">
           <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
+            <span>{{ item.goodsName }}</span>
+            <span class="price">￥{{ item.price + '/' + item.packInfo + item.goodsUnit }}</span>
           </div>
           <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
+            <img src="https://yangshuaiweb.com:9913/k.png" (click)="open(item.goodsId)" alt="">
           </div>
         </div>
       </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <p><img src="https://yangshuaiweb.com:9913/liulian.png" alt=""></p>
-        <div class="item-foot">
-          <div class="left">
-            <span>欢乐时光水果果篮</span>
-            <span class="price">￥188.00/1份</span>
-          </div>
-          <div class="right">
-            <img src="https://yangshuaiweb.com:9913/k.png" alt="">
-          </div>
-        </div>
-      </div>
-
       <div class="item visibility">
       </div>
       <div class="item visibility">
@@ -438,3 +164,6 @@
      </div>
   </div>
 </div>
+
+<!-- <button class="btn btn-lg btn-outline-primary" (click)="open()">Launch demo modal</button>
+ -->
