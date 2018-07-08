@@ -52,7 +52,7 @@ router.post('/user_login', (req, res, next) => {
         if (!result.length) res.status(200).send({ msg: '您还未注册', code: 0 });
           else {
             req.session.user_id = result[0].uid;
-            res.send({ msg: '登录成功', code: 1, r: result[0] });
+            res.send({ msg: '登录成功', code: 1, user_info: result[0] });
           }
       }
     });

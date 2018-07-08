@@ -48,3 +48,81 @@
     </div>
   </div>
 </div>
+<div id="mainNav">
+  <p class="main_p1 left"><img src="https://yangshuaiweb.com:9913/mainNavlogo.png" alt=""></p>
+  <div class="mainNav_rightBox pull-right" style="margin-right: 80px; margin-top: 32px;">
+    <p class="main_p2">
+      <input class="main_int left" type="text" placeholder="樱桃" value=""/>
+      <input class="main_btn left" type="button" value="">
+    </p>
+    <p class="main_p3 left">
+      <span>热门 :</span>
+      <a href="">蓝莓</a>
+      <a href="">樱桃</a>
+      <a href="">奇异果</a>
+      <a href="">荔枝</a>
+    </p>
+  </div>
+  <p class="main_p4 left"><a href="shopCar.html"><img src="img/t.png" alt=""></a></p>
+  <ngb-tabset (tabChange)="beforeChange($event)">
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <span>首页</span>
+        <span>Home</span>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <span>鲜果</span>
+        <span>Fruit</span>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <span>生鲜</span>
+        <span>Fresh</span>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <span>礼品</span>
+        <span>Gift</span>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <span>会员中心</span>
+        <span>VIP Club</span>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>
+
+<!-- <ngb-tabset>
+  <ngb-tab title="Simple">
+    <ng-template ngbTabContent>
+      <router-outlet></router-outlet>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+    <ng-template ngbTabContent>
+      <router-outlet></router-outlet>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset> -->

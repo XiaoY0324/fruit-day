@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
 import { RegisterComponent } from './login/register/register.component';
 import { UserLoginComponent } from './login/user-login/user-login.component';
+import { DetailComponent } from './page/detail/detail.component';
+
 
 
 const routes: Routes = [
@@ -20,8 +22,8 @@ const routes: Routes = [
     component: HomeComponent,
     // children: [
     //   {
-    //     path: 'living',
-    //     component: MyLivingComponent,
+    //     path: 'detail/:id',
+    //     component: DetailComponent,
     //   },
     //   {
     //     path: 'trip',
@@ -41,11 +43,15 @@ const routes: Routes = [
     //   },
     // ]
   },
-  // {
-  //   path: '',
-  //   redirectTo: '/login',
-  //   pathMatch: 'full'
-  // }
+  {
+     path: 'detail/:goodId',
+     component: DetailComponent,
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

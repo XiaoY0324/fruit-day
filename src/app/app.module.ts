@@ -3,7 +3,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import {ToastModule} from 'ng2-toastr/ng2-toastr';
+import { ToastModule } from 'ng2-toastr/ng2-toastr';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ChartsModule } from 'ng2-charts'; // 默认读取xxx.d.ts
@@ -17,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
   ],
   imports: [
+    NgbModule.forRoot(),
     AppRoutingModule,
     BrowserModule,
     FormsModule,

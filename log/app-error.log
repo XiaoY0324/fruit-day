@@ -1,2 +1,63 @@
-[2018-07-07T10:33:02.507][ERROR  29987  cheese] error
-[2018-07-07T10:33:02.508][FATAL  29987  cheese] fatal
+[2018-07-08T00:06:49.311][ERROR  35210  cheese] error
+[2018-07-08T00:06:49.312][FATAL  35210  cheese] fatal
+[2018-07-08T00:28:20.458][ERROR  35293  cheese] error
+[2018-07-08T00:28:20.458][FATAL  35293  cheese] fatal
+[2018-07-08T00:41:07.573][ERROR  35337  cheese] error
+[2018-07-08T00:41:07.573][FATAL  35337  cheese] fatal
+[2018-07-08T00:41:35.473][ERROR  35369  cheese] error
+[2018-07-08T00:41:35.473][FATAL  35369  cheese] fatal
+[2018-07-08T00:41:47.270][ERROR  35396  cheese] error
+[2018-07-08T00:41:47.270][FATAL  35396  cheese] fatal
+[2018-07-08T00:41:54.084][ERROR  35434  cheese] error
+[2018-07-08T00:41:54.084][FATAL  35434  cheese] fatal
+[2018-07-08T00:57:08.267][ERROR  35495  cheese] error
+[2018-07-08T00:57:08.267][FATAL  35495  cheese] fatal
+[2018-07-08T00:58:04.722][ERROR  35495  cheese] { message: '查询失败' }
+[2018-07-08T01:00:25.751][ERROR  35523  cheese] error
+[2018-07-08T01:00:25.752][FATAL  35523  cheese] fatal
+[2018-07-08T01:00:33.633][ERROR  35523  cheese] { message: '查询失败' }
+[2018-07-08T01:01:55.740][ERROR  35542  cheese] error
+[2018-07-08T01:01:55.740][FATAL  35542  cheese] fatal
+[2018-07-08T01:03:36.476][ERROR  35580  cheese] error
+[2018-07-08T01:03:36.477][FATAL  35580  cheese] fatal
+[2018-07-08T01:07:30.245][ERROR  35611  cheese] error
+[2018-07-08T01:07:30.245][FATAL  35611  cheese] fatal
+[2018-07-08T01:08:05.477][ERROR  35631  cheese] error
+[2018-07-08T01:08:05.477][FATAL  35631  cheese] fatal
+[2018-07-08T01:08:28.039][ERROR  35650  cheese] error
+[2018-07-08T01:08:28.040][FATAL  35650  cheese] fatal
+[2018-07-08T01:08:51.921][ERROR  35662  cheese] error
+[2018-07-08T01:08:51.922][FATAL  35662  cheese] fatal
+[2018-07-08T01:10:52.093][ERROR  35688  cheese] error
+[2018-07-08T01:10:52.093][FATAL  35688  cheese] fatal
+[2018-07-08T09:17:55.406][ERROR  35688  cheese] { Error: read ETIMEDOUT
+    at exports._errnoException (util.js:1050:11)
+    at TCP.onread (net.js:582:26)
+    --------------------
+    at Protocol._enqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/Connection.js:208:25)
+    at /Users/ys/workspace/fruit-day/lib/api/goods.js:32:16
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'read',
+  fatal: true }
+[2018-07-08T09:18:15.405][ERROR  35688  cheese] { Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:201:16)
+    at Protocol._enqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:139:13)
+    at Connection.query (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/Connection.js:208:25)
+    at /Users/ys/workspace/fruit-day/lib/api/goods.js:32:16
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12) code: 'PROTOCOL_ENQUEUE_AFTER_FATAL_ERROR', fatal: false }
+[2018-07-08T09:18:39.680][ERROR  36251  cheese] error
+[2018-07-08T09:18:39.680][FATAL  36251  cheese] fatal

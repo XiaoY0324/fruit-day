@@ -45,8 +45,8 @@ export class UserLoginComponent implements OnInit {
         return false;
       } else {
         this.toastr.success('登陆成功', '😊');
+        localStorage.setItem('user', JSON.stringify(data.user_info));
         setTimeout(() => this.router.navigate(['/home']), 1000);
-
       }
     });
   }

@@ -39,4 +39,57 @@ button:hover {
   background-color: #3498db;
 }
 
+#mainNav .nav {
+  display: inline-block;
+
+  .active {
+    color: green !important;
+  }
+
+  &:first-child a {
+    border-left: none;
+  }
+
+  & li:last-child a {
+    width: 150px;
+    border-right: none;
+  }
+
+  .nav-item {
+    text-align: center;
+    height: 114px;
+    margin-top: 2px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    margin-bottom: 20px !important;
+    text-decoration: none;
+    display: inline-block;
+    width: 113px;
+    border-top: none;
+    padding: 0 35px 0 35px;
+    margin-top: 39px;
+    border-right: 1px solid #eeeeee;
+    color: #999999;
+  }
+}
+
+#mainNav .main_p1 {
+  margin-left: 84px !important;
+  margin-top: 25px !important;
+  width: 342px;
+}
+
+#mainNav .nav-tabs {
+  border-bottom: none !important;
+}
+
+.modal-backdrop.fade {
+  opacity: .5 !important;
+}
+
+.modal-content {
+  margin-top: 150px;
+}
 
