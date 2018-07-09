@@ -58,7 +58,7 @@
           </div>
           <div class="btn-box">
             <button class="btn-box1">立刻购买</button>
-            <button class="btn-box2">加入购物车</button>
+            <button class="btn-box2" (click)="open(goodsInfo.goodsId)">加入购物车</button>
           </div>
         </div>
         <div class="cot">
@@ -86,10 +86,10 @@
         <div class="a-l-title" id="a-l-title">
           <p class="a-l-t-p1 left">
             <span class="a-l-t-p1-span1 left">商品简介</span>
-            <span class="a-l-t-p1-span2 left">顾客评论(1337)</span>
+            <span class="a-l-t-p1-span2 left">顾客评论(13)</span>
           </p>
           <p class="a-l-t-p2 pull-right">
-            <a href="javascript:;" title="加入购物车"><img src="https://yangshuaiweb.com:9913/cars.png" alt="">加入购物车</a>
+            <a href="javascript:;" title="加入购物车" (click)="open(goodsInfo.goodsId)"><img src="https://yangshuaiweb.com:9913/cars.png" alt="">加入购物车</a>
           </p>
           <div id="hide-div">
             <div class="hide-left left">

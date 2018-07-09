@@ -2,6 +2,8 @@ import { Component, OnInit, ViewContainerRef, Input } from '@angular/core';
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 import { HttpClient } from '@angular/common/http';
 import { NgbModal, NgbActiveModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import { AddCartComponent } from '../../shared/add-cart/add-cart.component';
 
 interface goodsParams {
   goodsSpec: string
@@ -11,31 +13,6 @@ interface goodsInfo {
   userId: number,
   goodsId: number,
   goodsCnt: number
-}
-
-// 弹框
-@Component({
-  selector: 'ngbd-modal-content',
-  template: `
-    <div class="modal-header">
-      <h4 class="modal-title">提示</h4>
-      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p style="color: green;">加入购物车成功!</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-light" (click)="activeModal.close('Close click')">继续添加</button>
-      <button type="button" class="btn btn-light" (click)="activeModal.close('Close click')">去结算</button>
-    </div>
-  `
-})
-export class NgbdModalContent {
-  @Input() name;
-
-  constructor(public activeModal: NgbActiveModal) {}
 }
 
 @Component({
@@ -54,7 +31,8 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient,
               private vRef: ViewContainerRef,
               private toastr: ToastsManager,
-              private modalService: NgbModal) {
+              private modalService: NgbModal,
+              private router: Router) {
     this.toastr.setRootViewContainerRef(vRef);
   }
 
@@ -78,11 +56,11 @@ export class HomeComponent implements OnInit {
 
   open(goodsId) {
     this.addShopCar(goodsId);
-    const modalRef = this.modalService.open(NgbdModalContent);
+    const modalRef = this.modalService.open(AddCartComponent);
 
     modalRef.componentInstance.name = 'World';
     modalRef.result.then(val => {
-      console.log(val);
+      if (val === `结算`) this.router.navigate(['shop_car']);
     }, (reason) => {
       console.log(`Dismissed ${this.getDismissReason(reason)}`);
     });
@@ -111,6 +89,5 @@ export class HomeComponent implements OnInit {
       }, () => {
       this.toastr.error('添加购物车失败', '😣');
     });
-
   }
 }

@@ -1,0 +1,57 @@
+  <div id="mainNav" class="shop_car">
+    <p class="main_p1 left"><img src="https://yangshuaiweb.com:9913/mainNavlogo.png" alt=""></p>
+    <p class="main-p2 right"></p>
+  </div>
+
+  <div id="cart">
+    <div class="mycart">
+      <img src="img/t.png" alt=""/>
+      <h6>我的购物车</h6>
+      <a href="friut.html" [routerLink]="['/home']">继续逛逛&gt;</a>
+    </div>
+    <div class="cart-box">
+      <div class="c-b-title">
+        <p class="c-b-t-pic"></p>
+        <p class="c-b-t-name">商品</p>
+        <p class="c-b-t-style">规格</p>
+        <p class="c-b-t-price">单价(元)</p>
+        <p class="c-b-t-count text-center">数量</p>
+        <p class="c-b-t-oldPrice">原价(元)</p>
+        <p class="c-b-t-sel">操作</p>
+      </div>
+      <ul class="cart-ul">
+        <li *ngFor="let list of cartList; let idx = index" [attr.data-index]="idx" class="pull-left">
+          <p class="c-ul-p"><img [src]="list.goodsImg" alt="图片没加载出来~~~~(>_<)~~~~\"/></p>
+            <h3>{{ list.goodsName }}</h3>
+            <span class="c-ul-sp1">{{ list.goodsUnit }}</span>
+            <span class="c-ul-sp2">{{ list.price }}</span>
+            <p class="count-p2">
+              <span class="decrement" (click)="modCount(0, idx)">-</span>
+              <input [(ngModel)]="list.goodsCnt">
+              <span class="add" (click)="modCount(1, idx)">+</span>
+            </p>
+            <span class="c-ul-sp3">{{ list.old_price }}</span>
+            <a class="btn btn-danger btn-xs" style="color: #fff; position: relative; top: 38px;" (click)="deleteGood(list.goodsId)">删除</a>
+        </li>
+      </ul>
+      <div class="goodcell">
+        <p>促</p>
+        <a href="friut.html">【尝鲜换购】 7.9换购时令鲜蔬,限量800份,换完即止,还差39.10元,去凑单</a>
+      </div>
+      <div class="account">
+        <p>已选择<span class="a-p-sp1">{{ cartList.length }}</span>件商品 | 订单金额&nbsp;&nbsp;<i class="a-p-i">{{ '￥' + priceAmount }}</i></p>
+        <a href="">去结算</a>
+      </div>
+    </div>
+    <div id="remember">
+      <p class="r-p1">最近浏览过的商品</p>
+      <p class="r-p2">你可能感兴趣的商品</p>
+    </div>
+    <div id="b-box">
+      <ul>
+        <li>
+          <img src="img/sss.bmp" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
