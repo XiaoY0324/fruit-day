@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbTabsetModule, NgbTabChangeEvent } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'page-header',
@@ -12,10 +13,15 @@ export class HeaderComponent implements OnInit {
     'ngb-tab-0': '/home',
     'ngb-tab-1': '/login'
   };
+  showTab: boolean = true;
 
-  constructor(public ngbTabset: NgbTabsetModule, private router: Router) { }
+  constructor(public ngbTabset: NgbTabsetModule, private router: Router, public location: Location) { }
 
   ngOnInit() {
+    console.warn(this.location.path());
+    const curPath = this.location.path();
+
+    if (/\/shop_car/.test(curPath)) this.showTab = false;
   }
 
   beforeChange($event: NgbTabChangeEvent) {

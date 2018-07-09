@@ -25,7 +25,7 @@ router.post('/register', (req, res, next) => {
     req.body.createTime = new Date();
     delete req.body.verification_code;
 
-    connection.query(`SELECT mobile FROM user WHERE mobile = ${ req.body.mobile }`, (err, result) => {
+    connection.query(`SELECT mobile FROM user WHERE mobile = '{ req.body.mobile }'`, (err, result) => {
       if (err) next({ message: '查询失败' });
       else {
         if (result.length) return next({ message: '该账号已注册' });
@@ -46,7 +46,7 @@ router.post('/register', (req, res, next) => {
 // 登录
 router.post('/user_login', (req, res, next) => {
   try {
-    connection.query(`SELECT mobile,password,uid FROM user WHERE mobile = ${ req.body.mobile } and password = ${ req.body.password }`, (err, result) => {
+    connection.query(`SELECT mobile,password,uid FROM user WHERE mobile = '${ req.body.mobile }'' and password = '${ req.body.password }'`, (err, result) => {
       if (err) next({ message: '查询失败' });
       else {
         if (!result.length) res.status(200).send({ msg: '您还未注册', code: 0 });

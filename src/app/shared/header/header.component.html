@@ -48,7 +48,7 @@
     </div>
   </div>
 </div>
-<div id="mainNav">
+<div id="mainNav" *ngIf="showTab">
   <p class="main_p1 left"><img src="https://yangshuaiweb.com:9913/mainNavlogo.png" alt=""></p>
   <div class="mainNav_rightBox pull-right" style="margin-right: 80px; margin-top: 32px;">
     <p class="main_p2">
@@ -113,6 +113,7 @@
   </ngb-tabset>
 </div>
 
+<router-outlet *ngIf="!showTab"></router-outlet>
 <!-- <ngb-tabset>
   <ngb-tab title="Simple">
     <ng-template ngbTabContent>

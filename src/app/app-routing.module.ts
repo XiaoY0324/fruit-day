@@ -5,8 +5,7 @@ import { HomeComponent } from './page/home/home.component';
 import { RegisterComponent } from './login/register/register.component';
 import { UserLoginComponent } from './login/user-login/user-login.component';
 import { DetailComponent } from './page/detail/detail.component';
-
-
+import { ShopCarComponent } from './page/shop-car/shop-car.component';
 
 const routes: Routes = [
   {
@@ -46,6 +45,10 @@ const routes: Routes = [
   {
      path: 'detail/:goodId',
      component: DetailComponent,
+  },
+  {
+     path: 'shop_car',
+     component: ShopCarComponent,
   },
   {
     path: '',
