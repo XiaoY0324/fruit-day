@@ -60,4 +60,6 @@ export class ShopCarComponent implements OnInit {
 
     this.countOrder();
   }
+
+  // 去结算 (生成订单信息 -> 付款)
 }

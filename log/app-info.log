@@ -1,3 +1,15 @@
 [2018-07-09T09:29:14.699][DEBUG  43182  cheese] trace
 [2018-07-09T09:29:14.701][ INFO  43182  cheese] info
 [2018-07-09T09:29:14.725][ INFO  43182  cheese] server listening at port 8989...
+[2018-07-09T14:34:00.808][DEBUG  47726  cheese] trace
+[2018-07-09T14:34:00.809][ INFO  47726  cheese] info
+[2018-07-09T14:34:00.829][ INFO  47726  cheese] server listening at port 8989...
+[2018-07-09T14:34:43.096][DEBUG  47947  cheese] trace
+[2018-07-09T14:34:43.097][ INFO  47947  cheese] info
+[2018-07-09T14:34:43.117][ INFO  47947  cheese] server listening at port 8989...
+[2018-07-09T17:13:03.765][DEBUG  49468  cheese] trace
+[2018-07-09T17:13:03.766][ INFO  49468  cheese] info
+[2018-07-09T17:13:03.786][ INFO  49468  cheese] server listening at port 8989...
+[2018-07-09T17:14:50.105][ INFO  49468  cheese] 执行插入操作
+[2018-07-09T17:14:56.713][ INFO  49468  cheese] 执行修改操作
+[2018-07-09T17:16:12.241][ INFO  49468  cheese] 执行修改操作

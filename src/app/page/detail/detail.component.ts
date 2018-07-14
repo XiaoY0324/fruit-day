@@ -72,6 +72,7 @@ export class DetailComponent implements OnInit {
     modalRef.componentInstance.name = 'World';
     modalRef.result.then(val => {
       console.log(val);
+      if (val === `结算`) this.router.navigate(['shop_car']);
     }, (reason) => {
       console.log(`Dismissed ${this.getDismissReason(reason)}`);
     });

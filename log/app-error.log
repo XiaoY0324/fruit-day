@@ -20,3 +20,56 @@
 [2018-07-09T09:27:40.888][FATAL  43116  cheese] fatal
 [2018-07-09T09:29:14.702][ERROR  43182  cheese] error
 [2018-07-09T09:29:14.702][FATAL  43182  cheese] fatal
+[2018-07-09T14:34:00.809][ERROR  47726  cheese] error
+[2018-07-09T14:34:00.810][FATAL  47726  cheese] fatal
+[2018-07-09T14:34:43.098][ERROR  47947  cheese] error
+[2018-07-09T14:34:43.098][FATAL  47947  cheese] fatal
+[2018-07-09T17:12:48.300][ERROR  47947  cheese] { Error: read ECONNRESET
+    at exports._errnoException (util.js:1050:11)
+    at TCP.onread (net.js:582:26)
+    --------------------
+    at Protocol._enqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/Connection.js:208:25)
+    at /Users/ys/workspace/fruit-day/lib/api/goods.js:32:16
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+  code: 'ECONNRESET',
+  errno: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true }
+[2018-07-09T17:13:03.767][ERROR  49468  cheese] error
+[2018-07-09T17:13:03.767][FATAL  49468  cheese] fatal
+[2018-07-09T17:50:52.768][ERROR  49468  cheese] { Error: read ECONNRESET
+    at exports._errnoException (util.js:1050:11)
+    at TCP.onread (net.js:582:26)
+    --------------------
+    at Protocol._enqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/Connection.js:208:25)
+    at /Users/ys/workspace/fruit-day/lib/api/goods.js:95:16
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:275:10)
+  code: 'ECONNRESET',
+  errno: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true }
+[2018-07-09T17:51:05.176][ERROR  49468  cheese] { Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:201:16)
+    at Protocol._enqueue (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/protocol/Protocol.js:139:13)
+    at Connection.query (/Users/ys/workspace/fruit-day/node_modules/mysql/lib/Connection.js:208:25)
+    at /Users/ys/workspace/fruit-day/lib/api/goods.js:95:16
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ys/workspace/fruit-day/node_modules/express/lib/router/index.js:335:12) code: 'PROTOCOL_ENQUEUE_AFTER_FATAL_ERROR', fatal: false }
