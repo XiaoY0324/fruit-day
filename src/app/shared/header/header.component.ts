@@ -14,12 +14,14 @@ export class HeaderComponent implements OnInit {
     'ngb-tab-1': '/login'
   };
   showTab: boolean = true;
+  user: any;
 
   constructor(public ngbTabset: NgbTabsetModule, private router: Router, public location: Location) { }
 
   ngOnInit() {
     console.warn(this.location.path());
     const curPath = this.location.path();
+    this.user = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : { uid: '' };
 
     if (/\/shop_car/.test(curPath)) this.showTab = false;
   }

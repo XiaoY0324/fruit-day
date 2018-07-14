@@ -4,6 +4,7 @@ import { NgbModal, NgbActiveModal, ModalDismissReasons, NgbDropdownModule } from
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 import { AddCartComponent } from '../../shared/add-cart/add-cart.component';
+import { environment } from '../../../environments/environment';
 
 interface orderParam {
   count: number,
@@ -72,7 +73,8 @@ export class DetailComponent implements OnInit {
     modalRef.componentInstance.name = 'World';
     modalRef.result.then(val => {
       console.log(val);
-      if (val === `结算`) this.router.navigate(['shop_car']);
+      // if (val === `结算`) this.router.navigate(['shop_car']);
+      if (val === `结算`) window.open(`${ environment.tiantian }/shop_car`, '_blank')
     }, (reason) => {
       console.log(`Dismissed ${this.getDismissReason(reason)}`);
     });

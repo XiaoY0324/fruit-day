@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { CaptchaService } from './captcha/common.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { AddCartComponent } from './add-cart/add-cart.component';
 
@@ -10,7 +11,8 @@ import { AddCartComponent } from './add-cart/add-cart.component';
   imports: [
     CommonModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   declarations: [HeaderComponent, AddCartComponent],
   providers: [CaptchaService],

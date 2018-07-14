@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { NgbModal, NgbActiveModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { AddCartComponent } from '../../shared/add-cart/add-cart.component';
+import { environment } from '../../../environments/environment';
 
 interface goodsParams {
   goodsSpec: string
@@ -40,8 +41,14 @@ export class HomeComponent implements OnInit {
     this.user = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : { uid: '' };
     this.goodsInfo.userId = (this.user as any).uid;
 
-    // 商品列表数据
-    this.http.get('http://localhost:8989/aws/goods/goods_list', {
+    this.getList();
+  }
+
+  getList(filterLabel?: string) {
+    const queryPar = filterLabel ? `/filter=${ filterLabel }` : '';
+
+   // 商品列表数据
+    this.http.get('http://localhost:8989/aws/goods/goods_list' + queryPar, {
        withCredentials: true
      }).subscribe(data => {
         this.goods = (data as any).goods;
@@ -60,7 +67,7 @@ export class HomeComponent implements OnInit {
 
     modalRef.componentInstance.name = 'World';
     modalRef.result.then(val => {
-      if (val === `结算`) this.router.navigate(['shop_car']);
+      if (val === `结算`) window.open(`${ environment.tiantian }/shop_car`, '_blank')
     }, (reason) => {
       console.log(`Dismissed ${this.getDismissReason(reason)}`);
     });

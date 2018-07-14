@@ -5,7 +5,7 @@
 
   <div id="cart">
     <div class="mycart">
-      <img src="img/t.png" alt=""/>
+      <img src="https://yangshuaiweb.com:9913/t.png" alt=""/>
       <h6>我的购物车</h6>
       <a href="friut.html" [routerLink]="['/home']">继续逛逛&gt;</a>
     </div>
@@ -33,6 +33,7 @@
             <span class="c-ul-sp3">{{ list.old_price }}</span>
             <a class="btn btn-danger btn-xs" style="color: #fff; position: relative; top: 38px;" (click)="deleteGood(list.goodsId)">删除</a>
         </li>
+        <li *ngIf="!cartList.length">购物车空空如也~</li>
       </ul>
       <div class="goodcell">
         <p>促</p>
@@ -40,7 +41,7 @@
       </div>
       <div class="account">
         <p>已选择<span class="a-p-sp1">{{ cartList.length }}</span>件商品 | 订单金额&nbsp;&nbsp;<i class="a-p-i">{{ '￥' + priceAmount }}</i></p>
-        <a href="">去结算</a>
+        <a (click)="pay()" class="pay">去结算</a>
       </div>
     </div>
     <div id="remember">
@@ -50,7 +51,7 @@
     <div id="b-box">
       <ul>
         <li>
-          <img src="img/sss.bmp" alt="">
+          <!-- <img src="img/sss.bmp" alt=""> -->
         </li>
       </ul>
     </div>

@@ -1,15 +1,106 @@
-[2018-07-09T09:29:14.699][DEBUG  43182  cheese] trace
-[2018-07-09T09:29:14.701][ INFO  43182  cheese] info
-[2018-07-09T09:29:14.725][ INFO  43182  cheese] server listening at port 8989...
-[2018-07-09T14:34:00.808][DEBUG  47726  cheese] trace
-[2018-07-09T14:34:00.809][ INFO  47726  cheese] info
-[2018-07-09T14:34:00.829][ INFO  47726  cheese] server listening at port 8989...
-[2018-07-09T14:34:43.096][DEBUG  47947  cheese] trace
-[2018-07-09T14:34:43.097][ INFO  47947  cheese] info
-[2018-07-09T14:34:43.117][ INFO  47947  cheese] server listening at port 8989...
-[2018-07-09T17:13:03.765][DEBUG  49468  cheese] trace
-[2018-07-09T17:13:03.766][ INFO  49468  cheese] info
-[2018-07-09T17:13:03.786][ INFO  49468  cheese] server listening at port 8989...
-[2018-07-09T17:14:50.105][ INFO  49468  cheese] 执行插入操作
-[2018-07-09T17:14:56.713][ INFO  49468  cheese] 执行修改操作
-[2018-07-09T17:16:12.241][ INFO  49468  cheese] 执行修改操作
+[2018-07-14T10:48:43.582][DEBUG  71096  cheese] trace
+[2018-07-14T10:48:43.584][ INFO  71096  cheese] info
+[2018-07-14T10:48:43.614][ INFO  71096  cheese] server listening at port 8989...
+[2018-07-14T10:49:00.932][DEBUG  71158  cheese] trace
+[2018-07-14T10:49:00.934][ INFO  71158  cheese] info
+[2018-07-14T10:49:00.968][ INFO  71158  cheese] server listening at port 8989...
+[2018-07-14T10:49:28.071][DEBUG  71227  cheese] trace
+[2018-07-14T10:49:28.073][ INFO  71227  cheese] info
+[2018-07-14T10:49:28.110][ INFO  71227  cheese] server listening at port 8989...
+[2018-07-14T10:50:24.167][ INFO  71227  cheese] 执行插入操作
+[2018-07-14T10:52:13.107][ INFO  71227  cheese] 执行修改操作
+[2018-07-14T10:58:09.822][DEBUG  71296  cheese] trace
+[2018-07-14T10:58:09.824][ INFO  71296  cheese] info
+[2018-07-14T10:58:09.848][ INFO  71296  cheese] server listening at port 8989...
+[2018-07-14T10:58:17.052][DEBUG  71343  cheese] trace
+[2018-07-14T10:58:17.054][ INFO  71343  cheese] info
+[2018-07-14T10:58:17.102][ INFO  71343  cheese] server listening at port 8989...
+[2018-07-14T11:03:34.311][DEBUG  71442  cheese] trace
+[2018-07-14T11:03:34.312][ INFO  71442  cheese] info
+[2018-07-14T11:03:34.342][ INFO  71442  cheese] server listening at port 8989...
+[2018-07-14T11:08:08.235][DEBUG  71463  cheese] trace
+[2018-07-14T11:08:08.236][ INFO  71463  cheese] info
+[2018-07-14T11:08:08.261][ INFO  71463  cheese] server listening at port 8989...
+[2018-07-14T11:14:58.649][ INFO  71463  cheese] 执行修改操作
+[2018-07-14T11:15:20.328][ INFO  71463  cheese] 执行修改操作
+[2018-07-14T11:16:10.376][ INFO  71463  cheese] 执行修改操作
+[2018-07-14T11:18:01.914][DEBUG  71514  cheese] trace
+[2018-07-14T11:18:01.916][ INFO  71514  cheese] info
+[2018-07-14T11:18:01.940][ INFO  71514  cheese] server listening at port 8989...
+[2018-07-14T11:18:32.492][DEBUG  71549  cheese] trace
+[2018-07-14T11:18:32.495][ INFO  71549  cheese] info
+[2018-07-14T11:18:32.568][ INFO  71549  cheese] server listening at port 8989...
+[2018-07-14T11:19:36.875][DEBUG  71576  cheese] trace
+[2018-07-14T11:19:36.877][ INFO  71576  cheese] info
+[2018-07-14T11:19:36.908][ INFO  71576  cheese] server listening at port 8989...
+[2018-07-14T11:19:42.745][DEBUG  71620  cheese] trace
+[2018-07-14T11:19:42.747][ INFO  71620  cheese] info
+[2018-07-14T11:19:42.786][ INFO  71620  cheese] server listening at port 8989...
+[2018-07-14T12:10:07.621][DEBUG  71716  cheese] trace
+[2018-07-14T12:10:07.623][ INFO  71716  cheese] info
+[2018-07-14T12:10:07.650][ INFO  71716  cheese] server listening at port 8989...
+[2018-07-14T12:17:59.999][ INFO  71716  cheese] 执行插入操作
+[2018-07-14T12:25:43.901][ INFO  71716  cheese] 执行插入操作
+[2018-07-14T12:32:08.750][DEBUG  71806  cheese] trace
+[2018-07-14T12:32:08.752][ INFO  71806  cheese] info
+[2018-07-14T12:32:08.779][ INFO  71806  cheese] server listening at port 8989...
+[2018-07-14T12:35:41.669][DEBUG  71825  cheese] trace
+[2018-07-14T12:35:41.672][ INFO  71825  cheese] info
+[2018-07-14T12:35:41.701][ INFO  71825  cheese] server listening at port 8989...
+[2018-07-14T12:37:00.577][DEBUG  71854  cheese] trace
+[2018-07-14T12:37:00.578][ INFO  71854  cheese] info
+[2018-07-14T12:37:00.600][ INFO  71854  cheese] server listening at port 8989...
+[2018-07-14T12:37:43.481][DEBUG  71878  cheese] trace
+[2018-07-14T12:37:43.483][ INFO  71878  cheese] info
+[2018-07-14T12:37:43.503][ INFO  71878  cheese] server listening at port 8989...
+[2018-07-14T12:37:45.228][DEBUG  71895  cheese] trace
+[2018-07-14T12:37:45.230][ INFO  71895  cheese] info
+[2018-07-14T12:37:45.251][ INFO  71895  cheese] server listening at port 8989...
+[2018-07-14T13:45:23.642][DEBUG  72107  cheese] trace
+[2018-07-14T13:45:23.643][ INFO  72107  cheese] info
+[2018-07-14T13:45:23.673][ INFO  72107  cheese] server listening at port 8989...
+[2018-07-14T14:08:48.663][ INFO  72107  cheese] 执行插入操作
+[2018-07-14T14:09:05.714][ INFO  72107  cheese] 执行修改操作
+[2018-07-14T14:43:21.410][DEBUG  72332  cheese] trace
+[2018-07-14T14:43:21.413][ INFO  72332  cheese] info
+[2018-07-14T14:43:21.456][ INFO  72332  cheese] server listening at port 8989...
+[2018-07-14T16:18:09.526][DEBUG  74473  cheese] trace
+[2018-07-14T16:18:09.527][ INFO  74473  cheese] info
+[2018-07-14T16:18:09.578][ INFO  74473  cheese] server listening at port 8989...
+[2018-07-14T16:19:26.120][DEBUG  74609  cheese] trace
+[2018-07-14T16:19:26.121][ INFO  74609  cheese] info
+[2018-07-14T16:19:26.161][ INFO  74609  cheese] server listening at port 8989...
+[2018-07-14T16:59:58.909][DEBUG  74762  cheese] trace
+[2018-07-14T16:59:58.910][ INFO  74762  cheese] info
+[2018-07-14T16:59:58.947][ INFO  74762  cheese] server listening at port 8989...
+[2018-07-14T17:44:38.833][DEBUG  74979  cheese] trace
+[2018-07-14T17:44:38.834][ INFO  74979  cheese] info
+[2018-07-14T17:44:38.868][ INFO  74979  cheese] server listening at port 8989...
+[2018-07-14T17:47:24.531][DEBUG  75019  cheese] trace
+[2018-07-14T17:47:24.533][ INFO  75019  cheese] info
+[2018-07-14T17:47:24.562][ INFO  75019  cheese] server listening at port 8989...
+[2018-07-14T17:54:53.107][DEBUG  75105  cheese] trace
+[2018-07-14T17:54:53.108][ INFO  75105  cheese] info
+[2018-07-14T17:54:53.139][ INFO  75105  cheese] server listening at port 8989...
+[2018-07-14T17:56:18.006][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T17:56:18.294][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T17:56:19.405][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T17:56:19.731][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T17:56:22.906][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T17:57:45.879][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T17:57:46.232][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T17:57:46.529][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T17:57:46.818][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T17:57:47.130][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T18:02:42.550][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T18:03:19.036][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T18:03:57.973][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T18:14:45.126][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T18:14:47.415][ INFO  75105  cheese] 执行修改操作
+[2018-07-14T18:15:03.451][ INFO  75105  cheese] 执行插入操作
+[2018-07-14T18:21:30.670][DEBUG  75276  cheese] trace
+[2018-07-14T18:21:30.671][ INFO  75276  cheese] info
+[2018-07-14T18:21:30.706][ INFO  75276  cheese] server listening at port 8989...
+[2018-07-14T18:39:29.744][DEBUG  75413  cheese] trace
+[2018-07-14T18:39:29.746][ INFO  75413  cheese] info
+[2018-07-14T18:39:29.786][ INFO  75413  cheese] server listening at port 8989...

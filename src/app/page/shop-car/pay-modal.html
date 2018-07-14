@@ -1,0 +1,46 @@
+<div class="modal-header">
+  <h4 class="modal-title">提示</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" *ngIf="!curStep">
+  <p style="color: green;">请选择支付方式:</p>
+  <form>
+    <div class="form-group" style="padding-left: 20px; padding-top: 10px;">
+      <label style="display: block; margin-bottom: 10px;">
+        <input type="radio"
+               name="支付宝"
+               [value]="'支付宝'"
+               [(ngModel)]="payWay">
+          支付宝
+      </label>
+      <label style="display: block; margin-bottom: 10px;">
+        <input type="radio"
+               name="微信"
+               [value]="'微信'"
+               [(ngModel)]="payWay">
+          微信
+      </label>
+      <label style="display: block; margin-bottom: 10px;">
+        <input type="radio"
+               name="余额"
+               [value]="'余额'"
+               [(ngModel)]="payWay">
+          余额
+      </label>
+    </div>
+  </form>
+</div>
+<div class="modal-body" *ngIf="curStep">
+  <div class="form-group">
+    <label for="exampleInputPassword1" style="color: green;">请输入支付密码: </label>
+    <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password">
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button *ngIf="!curStep" type="button" class="btn btn-light" (click)="click(payWay)">下一步</button>
+  <button *ngIf="curStep" type="button" class="btn btn-light" (click)="activeModal.close('cancle')">取消</button>
+  <button *ngIf="curStep" type="button" class="btn btn-light" (click)="activeModal.close('pay')" [disabled]="!password">支付</button>
+</div>

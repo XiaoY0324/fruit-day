@@ -9,6 +9,7 @@ const connection = mysql.createConnection(dbConfig);
 
 // 首页商品信息
 router.get('/goods_list', (req, res, next) => {
+  console.log(req.query);
   try {
     connection.query(`SELECT * FROM goods`, (err, result) => {
       if (err) next(err);
@@ -83,10 +84,7 @@ router.get('/cart_list', (req, res, next) => {
     connection.query(`SELECT goods.goodsName, goods.goodsImg, goods.goodsId, goods.price, goods.goodsUnit, goods.old_price, cart.goodsCnt FROM goods, cart WHERE cart.goodsId=goods.goodsId and cart.userId='${ req.query.uid }'`, (err, result) => {
       if (err) next(err);
       else {
-        if (!result.length) next({ message: '没有商品' });
-          else {
-            res.send({ result: result, status: 'success' });
-          }
+        res.send({ result: result, status: 'success' });
       }
     });
 
@@ -108,6 +106,26 @@ router.delete('/cart_list', (req, res, next) => {
       }
     });
 
+  } catch (err) {
+    next(err);
+  }
+});
+
+// 创建订单信息
+router.post('/create_order', (req, res, next) => {
+  try {
+    connection.query('INSERT INTO wst_orders SET ?', req.body, (err, result) => {
+      if (err) next({ message: '插入数据失败' });
+      else {
+        // 生成订单后清空当前用户购物车
+        connection.query(`DELETE FROM cart WHERE cart.userId = '${ req.body.uid }'`, (err, result) => {
+          if (err) next(err);
+          else {
+            res.send({ msg: '生成订单成功', code: 1 });
+          }
+        });
+      }
+    });
   } catch (err) {
     next(err);
   }

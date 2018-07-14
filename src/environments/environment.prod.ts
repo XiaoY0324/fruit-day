@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  api: 'http://localhost:lslslsls',
+  tiantian: 'http://localhost:ssksks'
 };

@@ -8,16 +8,16 @@ import { AppRoutingModule } from '../app-routing.module';
 
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
-import { ShopCarComponent } from './shop-car/shop-car.component';
+import { ShopCarComponent, PayModal } from './shop-car/shop-car.component';
 
 @NgModule({
   imports: [
     NgbModule,
-    // SharedModule,
     FormsModule,
     CommonModule,
     AppRoutingModule
   ],
-  declarations: [HomeComponent, DetailComponent, ShopCarComponent],
+  declarations: [HomeComponent, DetailComponent, ShopCarComponent, PayModal],
+  entryComponents: [PayModal]
 })
 export class PageModule { }

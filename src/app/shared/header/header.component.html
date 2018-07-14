@@ -7,7 +7,8 @@
   <div id="topNav">
     <p class="left"><span class="topNav_sp1"><em></em>上海<i></i></span>满百包邮(环郊内)<a href="javascript:;">星夜达</a></p>
     <ul class="topNav_ul1 right">
-    <li><a href="javascript:;" class="border_a">[登录]</a>,<a href="regist.html">[注册有惊喜]</a></li>
+    <li *ngIf="!user.uid"><a href="javascript:;" class="border_a">[登录]</a>,<a href="regist.html">[注册有惊喜]</a></li>
+    <li *ngIf="user.uid"><a href="javascript:;" class="border_a">欢迎您</a>,<a href="regist.html">{{ user.mobile }}</a></li>
     <li class="hide_li"><a href="javascript:;">果园公告</a></li>
     <li><a href="javascript:;">券卡兑换</a></li>
     <li class="hide2_li"><a href="javascript:;"><img src="https://yangshuaiweb.com:9913/1.jpg" alt="">手机果园</a></li>
