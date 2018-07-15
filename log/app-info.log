@@ -4,3 +4,6 @@
 [2018-07-15T17:24:18.357][DEBUG  76824  cheese] trace
 [2018-07-15T17:24:18.358][ INFO  76824  cheese] info
 [2018-07-15T17:24:18.383][ INFO  76824  cheese] server listening at port 8989...
+[2018-07-15T17:26:14.303][DEBUG  77193  cheese] trace
+[2018-07-15T17:26:14.305][ INFO  77193  cheese] info
+[2018-07-15T17:26:14.380][ INFO  77193  cheese] server listening at port 8989...
