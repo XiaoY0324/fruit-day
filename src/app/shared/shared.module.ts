@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, enableProdMode } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { CaptchaService } from './services/common.service';
@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { AddCartComponent } from './add-cart/add-cart.component';
 
+enableProdMode();
 @NgModule({
   imports: [
     CommonModule,

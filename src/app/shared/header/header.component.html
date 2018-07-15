@@ -65,7 +65,7 @@
     </p>
   </div>
   <p class="main_p4 left"><a href="shopCar.html"><img src="img/t.png" alt=""></a></p>
-  <ngb-tabset (tabChange)="beforeChange($event)">
+  <ngb-tabset (tabChange)="beforeChange($event)" #t="ngbTabset">
     <ngb-tab>
       <ng-template ngbTabTitle>
         <span>首页</span>
