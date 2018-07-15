@@ -11,10 +11,12 @@ const connection = mysql.createConnection(dbConfig);
 router.get('/goods_list', (req, res, next) => {
   console.log(req.query);
   try {
-    connection.query(`SELECT * FROM goods`, (err, result) => {
+    const sql = req.query.filter ? `SELECT * FROM goods where goodsName like '${ '%' + req.query.filter + '%' }'` : `SELECT * FROM goods`;
+
+    connection.query(sql, (err, result) => {
       if (err) next(err);
       else {
-        if (!result.length) next({ message: '没有商品' });
+        if (!result.length) res.send({ goods: [], status: 'success' });
           else {
             // logger.info(result);
             res.send({ goods: result, status: 'success' });

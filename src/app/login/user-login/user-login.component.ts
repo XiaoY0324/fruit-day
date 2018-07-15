@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CaptchaService } from '../../shared/captcha/common.service';
+import { CaptchaService } from '../../shared/services/common.service';
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 import { Router } from '@angular/router';
 

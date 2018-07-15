@@ -3,7 +3,11 @@ import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 import { HttpClient } from '@angular/common/http';
 import { NgbModal, NgbActiveModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Subscription } from 'rxjs';
+
 import { AddCartComponent } from '../../shared/add-cart/add-cart.component';
+import { GoodsListService } from '../../shared/services/goodsList.service';
+
 import { environment } from '../../../environments/environment';
 
 interface goodsParams {
@@ -27,25 +31,35 @@ export class HomeComponent implements OnInit {
   goods: goodsParams[]; // 商品详情
   user: object = { uid: '' };
   goodsInfo: goodsInfo = { userId: 0, goodsId: 0, goodsCnt: 1 };
+  private renderGoodsSubscription: Subscription = null;
 
 
   constructor(private http: HttpClient,
               private vRef: ViewContainerRef,
               private toastr: ToastsManager,
               private modalService: NgbModal,
-              private router: Router) {
+              private router: Router,
+               private goodsListService: GoodsListService) {
     this.toastr.setRootViewContainerRef(vRef);
   }
 
   ngOnInit() {
     this.user = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : { uid: '' };
     this.goodsInfo.userId = (this.user as any).uid;
+    if (!this.renderGoodsSubscription) {
+      this.renderGoodsSubscription = this.goodsListService.getRenderSubject()
+                                        .subscribe((res: any) => {
+                                            console.log(res, 'bingo');
+                                            this.getList(res);
+                                        });
+
+   }
 
     this.getList();
   }
 
   getList(filterLabel?: string) {
-    const queryPar = filterLabel ? `/filter=${ filterLabel }` : '';
+    const queryPar = filterLabel ? `?filter=${ filterLabel }` : '';
 
    // 商品列表数据
     this.http.get('http://localhost:8989/aws/goods/goods_list' + queryPar, {

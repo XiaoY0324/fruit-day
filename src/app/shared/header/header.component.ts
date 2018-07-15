@@ -3,6 +3,8 @@ import { NgbTabsetModule, NgbTabChangeEvent } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
+import { GoodsListService } from '../services/goodsList.service';
+
 @Component({
   selector: 'page-header',
   templateUrl: './header.component.html',
@@ -15,8 +17,9 @@ export class HeaderComponent implements OnInit {
   };
   showTab: boolean = true;
   user: any;
+  filterLabel: string;
 
-  constructor(public ngbTabset: NgbTabsetModule, private router: Router, public location: Location) { }
+  constructor(public ngbTabset: NgbTabsetModule, private router: Router, public location: Location, private goodsListService: GoodsListService) { }
 
   ngOnInit() {
     console.warn(this.location.path());
@@ -31,5 +34,10 @@ export class HeaderComponent implements OnInit {
 
     // }
     this.router.navigate([this.mapLinkObj[$event.nextId]]);
+  }
+
+  filterList(filterLabel) {
+    console.log(filterLabel);
+    this.goodsListService.emitRenderInfo(filterLabel);
   }
 }
