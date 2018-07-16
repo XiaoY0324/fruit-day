@@ -31,7 +31,8 @@ export class HeaderComponent implements OnInit {
 
   ngAfterViewInit() {
     console.warn(this.location.path(), this.tabSet);
-    const nowTabId = '';
+    let nowTabId = '';
+
     for (let key in this.mapLinkObj) {
       if (this.mapLinkObj[key] === this.location.path()) nowTabId = key;
     }
@@ -39,9 +40,6 @@ export class HeaderComponent implements OnInit {
   }
 
   beforeChange($event: NgbTabChangeEvent) {
-    // for (let item in this.mapLinkObj) {
-
-    // }
     this.router.navigate([this.mapLinkObj[$event.nextId]]);
   }
 
